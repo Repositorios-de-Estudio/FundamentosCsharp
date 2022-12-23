@@ -1,0 +1,25 @@
+**C# para
+Aplicaciones de escritorio,
+Aplicaciones moviles,
+Aplicaciones web,
+
+
+**Es compatible con:
+Windows,
+Linux,
+MacOS
+
+**Caracteristicas:
+Orientado a objetos (paradigma),
+Fuertemente tipado,
+soportar varios paradigmas (imperativo, declarativo, funcional, generico)
+manejo automatico de memoria,
+Funciona junto con Framework .NET, 
+Funciona mediante la mv CLR: Common Language Runtime (lo da .NET):
+	Codigo a C# -> codigo CIL (common intermediate language) -> codigo nativo
+	CIL: Administra memoria, seguridad de tipos, manejo de excepciones, recolector, administrador de hilos
+
+
+**Historia:
+version 1.0 - 2002
+version 11 - 2022
