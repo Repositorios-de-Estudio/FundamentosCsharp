@@ -91,6 +91,11 @@ mostrar en consola: Console.WriteLine();
 formato: string.Format();
 
 
-Visual estudio
-Propiedades en forma de propiedades.
-Metodos en forma de cubos.
+public: accesible desde cualquier lugar
+private: solo accesible en la propia clase
+public static : No necesita tener un objeto instanciado para ser usado, los metodos static no pueden modificar directamente las propiedades que no son static
+				- es util cuando se necesita tener o hacer algo a todas las instancias por igual
+
+* Visual estudio
+- Propiedades en forma de propiedades.
+- Metodos en forma de cubos.

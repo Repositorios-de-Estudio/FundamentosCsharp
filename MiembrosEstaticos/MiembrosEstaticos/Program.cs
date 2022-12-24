@@ -16,12 +16,16 @@ namespace MiembrosEstaticos
             CuentaBancaria cuenta1 = new CuentaBancaria("001", "John Doe", 100);
             CuentaBancaria cuenta2 = new CuentaBancaria("002", "Jane Doe", 250);
 
+            // al usar un metodo static no se requiere la instancia
+            // asigna a todas las cuentas bancarias el Banco "Mi Banco"
+            Console.WriteLine("Cambiando el banco a Mi Banco...");
             CuentaBancaria.Banco = "Mi Banco";
 
             Console.WriteLine(cuenta1);
             Console.WriteLine(cuenta2);
 
-            Console.WriteLine("Cambiando el banco...");
+            // asigna a todas las cuentas bancarias el Banco "Otro banco"
+            Console.WriteLine("Cambiando el banco a Otro Banco...");
             CuentaBancaria.AsignarBanco("Otro Banco");
 
             Console.WriteLine(cuenta1);

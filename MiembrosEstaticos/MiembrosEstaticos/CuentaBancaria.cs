@@ -9,16 +9,9 @@ namespace MiembrosEstaticos
     {
         public string NoCuenta { get; set; }
         public string Usuario { get; set; }
-        private decimal _saldo;
 
-        public decimal Saldo
-        {
-            get { return _saldo; }
-            set
-            {
-                _saldo = value < 0 ? 0 : value;
-            }
-        }        
+        private decimal _saldo;
+        public decimal Saldo { get { return _saldo; } set { _saldo = value < 0 ? 0 : value; }  }        
 
         public static string Banco { get; set; }
 
@@ -62,8 +55,8 @@ namespace MiembrosEstaticos
 
         public override string ToString()
         {
-            return string.Format("NoCuenta: {0}, Usuario: {1}, Saldo: ${2}", 
-                NoCuenta, Usuario, Saldo);
+            return string.Format("NoCuenta: {0}, Usuario: {1}, Saldo: ${2}, Banco: {3}", 
+                NoCuenta, Usuario, Saldo, Banco);
         }
         #endregion        
 
