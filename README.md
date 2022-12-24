@@ -86,6 +86,18 @@ variable = valor < 0 ? 0: valor
 * igual, difernete, ==, !=
              
 
+
+** ENCAPSULAMIENTO** (namespaces)
+- Mecanismo para ocultar datos
+- Los datos de una clase solo son accesibles a traves de las propiedades y metodos designados
+- Garantiza la integridad de los datos que contiene el objeto
+
+* Niveles de acceso*
+- public: accesible por todos
+- internal: todos dentro del mismo ensamblado pueden acceder
+- protected:todas las subclases pueden acceder
+- private: solo la clase puede acceder
+
 Leer datos desde el teclado: int a = Int.Parse(Console.ReadLine());
 convertir int a string: Int.Parse(algo);
 convertir string a int: algo.ToString();
@@ -93,8 +105,6 @@ mostrar en consola: Console.WriteLine();
 formato: string.Format();
 
 
-public: accesible desde cualquier lugar
-private: solo accesible en la propia clase
 public static : No necesita tener un objeto instanciado para ser usado, los metodos static no pueden modificar directamente las propiedades que no son static
 				- es util cuando se necesita tener o hacer algo a todas las instancias por igual
 
