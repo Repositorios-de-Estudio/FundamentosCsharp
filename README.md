@@ -87,6 +87,8 @@ variable = valor < 0 ? 0: valor
              
 
 Leer datos desde el teclado: int a = Int.Parse(Console.ReadLine());
+convertir int a string: Int.Parse(algo);
+convertir string a int: algo.ToString();
 mostrar en consola: Console.WriteLine();
 formato: string.Format();
 
