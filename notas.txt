@@ -26,3 +26,26 @@ Funciona mediante la mv CLR: Common Language Runtime (lo da .NET):
 **Historia:
 version 1.0 - 2002
 version 11 - 2022
+
+
+Ventajas de Programacion orientada a objetos
+Modelo inspirado en objetos reales
+reuso del codigo
+facil de mantener
+
+las propiedades de la clase deben ir con Public y nombe empieza con Mayuscula
+Los metodos de la clase deben ir con Public seguido del tipo de retorno (void, int,..)
+
+
+
+
+
+
+
+
+
+
+
+Visual estudio
+Propiedades en forma de propiedades.
+Metodos en forma de cubos.
