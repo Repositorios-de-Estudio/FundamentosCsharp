@@ -23,6 +23,31 @@ namespace Propiedades
             set { _saldo = value < 0 ? 0 : value; }
         }
 
+        public void Retirar(decimal cantidad)
+        {
+            if (cantidad>Saldo)
+            {
+                Console.WriteLine("Saldo insuficiente");
+                return;
+                
+            }
+
+            Saldo -= cantidad;
+        }
+
+
+        public void Depositar(decimal cantidad)
+        {
+            Saldo += cantidad;
+        }
+
+
+        public override string ToString()
+        {
+            return string.Format("noCuenta: {0}, Usuario: {1}, Saldo: {2}", NoCuenta, Usuario, Saldo);
+        }
+
+
         //codigo extendido para set
         /*
             // Evitar que el saldo sea negativo

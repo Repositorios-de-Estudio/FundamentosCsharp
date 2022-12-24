@@ -50,7 +50,7 @@ Tipos enteros
 Tipos flotantes
 * float  -> System.Single
 * double -> System.Double
-* decimal -> System.Decimal
+* decimal -> System.Decimal  68.908
 
 
 
@@ -72,6 +72,10 @@ string
 * Incremento, decremento ++, --
 * 
 
+ternario
+si valor es <0, retorna 0, sino retorna valor
+variable = valor < 0 ? 0: valor
+
 
              3
 * Operadores de comparacion -> retorna booleano
@@ -81,6 +85,8 @@ string
              
 
 Leer datos desde el teclado: int a = Int.Parse(Console.ReadLine());
+mostrar en consola: Console.WriteLine();
+formato: string.Format();
 
 
 Visual estudio
