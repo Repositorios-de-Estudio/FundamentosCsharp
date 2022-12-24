@@ -39,11 +39,48 @@ Los metodos de la clase deben ir con Public seguido del tipo de retorno (void, i
 
 
 
+Tipos enteros
+* int -> system.Int32
+* short -> System.Int16
+* byte -> System.Byte
+* largo -> System.Int64
 
 
 
+Tipos flotantes
+* float  -> System.Single
+* double -> System.Double
+* decimal -> System.Decimal
 
 
+
+Otros
+* char -> System.Char
+* bool -> System.Boolean
+string
+
+
+             1
+* Operadores ARITMETICOS o binarios*
+* Suma, resta +, -
+* Multiplicacion, division, *, /
+* Modulo %
+
+
+            2
+* Operadores unarios
+* Incremento, decremento ++, --
+* 
+
+
+             3
+* Operadores de comparacion -> retorna booleano
+* Mayor que, menor que, >, <
+* Mayor o igual que, menor o igual que, >= , <=
+* igual, difernete, ==, !=
+             
+
+Leer datos desde el teclado: int a = Int.Parse(Console.ReadLine());
 
 
 Visual estudio
