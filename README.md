@@ -104,7 +104,7 @@ Curso: https://www.udemy.com/course/c-sharp-para-principiantes/
 		- Mostrar:
 			- For:
 			
-			```
+```
             for (int fila = 0; fila < matriz.GetLength(0); fila++)
             {
                 for (int colum = 0; colum < matriz.GetLength(1); colum++)
@@ -112,16 +112,16 @@ Curso: https://www.udemy.com/course/c-sharp-para-principiantes/
                     Console.WriteLine("For anidado [ {0} , {1} ] : {2} ", fila, colum, matriz[fila,colum]);
                 }
             }
-			```
+```
 			
 			- Foreach:
 			
-			```
+```
             foreach (var item in matriz)
             {
                 Console.WriteLine("Foreach Matriz [ {0} ]", item);
             }
-			```
+```
 		
 		
 - Clase Array:
