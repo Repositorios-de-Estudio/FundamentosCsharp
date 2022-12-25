@@ -3,7 +3,7 @@
 Curso: https://www.udemy.com/course/c-sharp-para-principiantes/
 
 
-## Areas de aplicaicón de C#
+## Areas de aplicacion de C#
 - Aplicaciones de escritorio
 - Aplicaciones moviles
 - Aplicaciones web
@@ -59,7 +59,7 @@ Curso: https://www.udemy.com/course/c-sharp-para-principiantes/
 
 ## Operadores ARITMETICOS o Binarios
 - Suma: `+ `
-- Resta `+`
+- Resta `-`
 - Multiplicacion: `* `
 - Division: `/`
 - Modulo: `%`
@@ -97,10 +97,37 @@ Curso: https://www.udemy.com/course/c-sharp-para-principiantes/
 		- set: `arreglo[i] = var`
 		- Multimencionales, filas y columnas `matriz[i][j]`
 		- Los arreglos no pueden cambiar de tamaño, tamaño dinamico usar  ArrayList 
+- Arreglo bidimencional:
+		- Declarar: `int[ , ] matriz = new int[3, 2] { {0,1 }, {2,3}, {4,5} };`
+		- Declarar: `int[ , ] matriz = { {0,1 }, {2,3}, {4,5} };`
+		- Declarar: `int[ , ] matriz = new int[3, 2];`
+		- Mostrar:
+			- For:
+			
+			```
+            for (int fila = 0; fila < matriz.GetLength(0); fila++)
+            {
+                for (int colum = 0; colum < matriz.GetLength(1); colum++)
+                {
+                    Console.WriteLine("For anidado [ {0} , {1} ] : {2} ", fila, colum, matriz[fila,colum]);
+                }
+            }
+			```
+			
+			- Foreach:
+			
+			```
+            foreach (var item in matriz)
+            {
+                Console.WriteLine("Foreach Matriz [ {0} ]", item);
+            }
+			```
+		
+		
+- Clase Array:
 		- Copiar arreglo: `Array.Copy(lista, otraLista, longitud);`
 		- Invertir arreglo: `Array.Reverse(list);` // no necesita ser asignado a otra lista
 		- Ordenar arreglo: `Array.Sort(list);` // ascendente, no necesita ser asignado a otra lista
-- Clase Array:		
 
 
 ## Operadores de comparacion (retorna booleano)
