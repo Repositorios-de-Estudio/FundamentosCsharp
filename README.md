@@ -3,7 +3,7 @@
 Curso: https://www.udemy.com/course/c-sharp-para-principiantes/
 
 
-## C# para
+## Areas de aplicaicón de C#
 - Aplicaciones de escritorio
 - Aplicaciones moviles
 - Aplicaciones web
