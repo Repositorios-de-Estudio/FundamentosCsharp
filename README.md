@@ -58,18 +58,18 @@ Curso: https://www.udemy.com/course/c-sharp-para-principiantes/
 
 
 ## Operadores ARITMETICOS o Binarios
-- Suma: + 
-- Resta +
-- Multiplicacion: * 
-- Division: /
-- Modulo: %
+- Suma: `+ `
+- Resta `+`
+- Multiplicacion: `* `
+- Division: `/`
+- Modulo: `%`
 
 
 # Operadores
 
 ## Operadores Unarios
-- Incremento: var++;
-- Decremento: var--;
+- Incremento: `var++;`
+- Decremento: `var--;`
 
 ## Operadores Ternario
 - ejemplo (if): `variable = value < 0 ? 0: value;`
@@ -89,7 +89,7 @@ Curso: https://www.udemy.com/course/c-sharp-para-principiantes/
 - `char ccc = 'A';`
 - `bool boo = true;`
 
-- Arreglos arreglo[]
+- Arreglos (`arreglo[ ]`)
 	- Cacrateristicas:
 		- declarar: `int[] arreglo = new int[n];` // n: tamaño
 		- declarar: `char[] vocales = {'a','e', 'i', 'o', 'u'};`
