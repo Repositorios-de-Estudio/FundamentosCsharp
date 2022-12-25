@@ -1,42 +1,39 @@
 # FundamentosCsharp
 
-https://www.udemy.com/course/c-sharp-para-principiantes/
+Curso: https://www.udemy.com/course/c-sharp-para-principiantes/
 
 
-**C# para
-Aplicaciones de escritorio,
-Aplicaciones moviles,
-Aplicaciones web,
+## C# para
+- Aplicaciones de escritorio
+- Aplicaciones moviles
+- Aplicaciones web
 
 
-**Es compatible con:
-Windows,
-Linux,
-MacOS
+## Es compatible con:
+- Windows
+- Linux
+- MacOS
 
-**Caracteristicas:
-Orientado a objetos (paradigma),
-Fuertemente tipado,
-soportar varios paradigmas (imperativo, declarativo, funcional, generico)
-manejo automatico de memoria,
-Funciona junto con Framework .NET, 
-Funciona mediante la mv CLR: Common Language Runtime (lo da .NET):
-	Codigo a C# -> codigo CIL (common intermediate language) -> codigo nativo
-	CIL: Administra memoria, seguridad de tipos, manejo de excepciones, recolector, administrador de hilos
+## Caracteristicas:
+- Orientado a objetos (paradigma)
+- Fuertemente tipado
+- Soportar varios paradigmas (imperativo, declarativo, funcional, generico)
+- Manejo automatico de memoria
+- Funciona junto con Framework .NET,
+- Funciona mediante la mv CLR: Common Language Runtime (lo da .NET):
+	- Codigo a C# -> codigo CIL (common intermediate language) -> codigo nativo
+	- CIL: Administra memoria, seguridad de tipos, manejo de excepciones, recolector, administrador de hilos
 
 
-**Historia:
+# Historia:
 version 1.0 - 2002
 version 11 - 2022
 
+# Ventajas de usar POO
+- Modelo inspirado en objetos reales
+- Reuso del codigo
+- Facil de mantener
 
-Ventajas de Programacion orientada a objetos
-Modelo inspirado en objetos reales
-reuso del codigo
-facil de mantener
-
-las propiedades de la clase deben ir con Public y nombe empieza con Mayuscula
-Los metodos de la clase deben ir con Public seguido del tipo de retorno (void, int,..)
 
 
 
@@ -122,12 +119,19 @@ Arreglos arreglo[]
 - protected:todas las subclases pueden acceder
 - private: solo la clase puede acceder
 
+
+# APUNTES
+
 Leer datos desde el teclado: int a = Int.Parse(Console.ReadLine());
 convertir int a string: Int.Parse(algo);
 convertir string a int: algo.ToString();
 mostrar en consola: Console.WriteLine();
 formato: string.Format();
 
+
+
+las propiedades de la clase deben ir con Public y nombe empieza con Mayuscula
+Los metodos de la clase deben ir con Public seguido del tipo de retorno (void, int,..)
 
 public static : No necesita tener un objeto instanciado para ser usado, los metodos static no pueden modificar directamente las propiedades que no son static
 				- es util cuando se necesita tener o hacer algo a todas las instancias por igual
