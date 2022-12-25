@@ -233,8 +233,9 @@ Curso: https://www.udemy.com/course/c-sharp-para-principiantes/
 
 # APUNTES
 - Leer datos desde el teclado: `int a = Int.Parse(Console.ReadLine());`
-- Convertir int a string: `Int.Parse(algo);`
-- Convertir string a int: `algo.ToString();`
+- Leer datos desde el teclado: `int a = Convert.ToInt32(Console.ReadLine());`
+- Convertir string a int: `Int.Parse(var);`
+- Convertir int a string: `var.ToString();`
 - Mostrar en consola por linea: `Console.WriteLine();`
 	- Ejemplo: `Console.WriteLine("Primero: {0}, Segundo: {1}, Tercero: {2}", aaa, bbb, ccc);`
 - Mostrar en consola sin saltos de linea: `Console.Write();`
