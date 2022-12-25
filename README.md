@@ -76,10 +76,34 @@ string
 
 ternario
 si valor es <0, retorna 0, sino retorna valor
-variable = valor < 0 ? 0: valor
+variable = value < 0 ? 0: value
 
 
-             3
+** VARIABLES **
+int entero = 100; //hasta 32bits
+short sss = 140; //16bits
+byte bbb = 10; // 8bits
+long largo = 1234567890; //64bits     
+
+float fff = 123.5f; // siempre debe ir con f, precion single o de un decimal
+double ddd = 3.14159; // precision doble o double
+decimal dec = 129.99m; // siempre usar m, utlizado para operaciones financieras ideal para calculos
+
+char ccc = 'A';
+bool boo = true;
+
+Arreglos arreglo[]
+- declarar: int[] arreglo = new int[n] , n: tamaño
+- declarar: char[] vocales = {'a','e', 'i', 'o', 'u'};
+- declarar: char[] vocales = new char[] {'a','e', 'i', 'o', 'u'};
+- primer indice: 0
+- ultimo indice: arreglo.Length-1;
+- get: int var = arreglo[i]
+- set: arreglo[i] = var
+- multimencionales, filas y columnas matriz[i][j]
+- los arreglos no pueden cambiar de tamaño, tamaño dinamico usar  ArrayList 
+
+    3
 * Operadores de comparacion -> retorna booleano
 * Mayor que, menor que, >, <
 * Mayor o igual que, menor o igual que, >= , <=
