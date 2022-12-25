@@ -105,7 +105,118 @@ Curso: https://www.udemy.com/course/c-sharp-para-principiantes/
 - Menor o igual que `<=`
 - Igual `==`
 - Difernete `!=`
-             
+
+## Operadores Logicos
+- AND: `&&`
+- OR: `||`
+- Negacion: `!`
+
+
+
+
+# Condicionales:
+
+## MODIFICADORES
+- `Break`: Interrumpe el ciclo y lo termina
+- `Continue`: Interrumpe el ciclo en ejecución y continua con la siguiente iteración
+
+## if
+```
+            if (num > 5)
+            {
+                Console.WriteLine("num es mayor que 5");
+            }
+```
+
+
+## if - else
+```
+            int edad = 23;
+            if (edad >= 18)
+            {
+                Console.WriteLine("Es mayor de edad");
+            }
+            else
+            {
+                Console.WriteLine("Menor de edad");
+            }
+```
+
+
+## if - else if - else
+```
+            int a = 1;
+            int b = 6;
+            if (a > b)
+            {
+                Console.WriteLine("A es mayor que B");
+            }
+            else if (a == b)
+            {
+                Console.WriteLine("A es igual que B");
+            }
+            else
+            {
+                Console.WriteLine("A es menor que B");
+            }
+```
+
+## switch
+```
+            string codigo = "A1X";
+            switch (codigo)
+            {
+                case "A1":
+                    Console.WriteLine("A1");
+                    break;
+                case "A2":
+                    Console.WriteLine("A2");
+                    break;
+                case "A3":
+                    Console.WriteLine("A3");
+                    break;
+                default:
+                    Console.WriteLine("No encontrado");
+                    break;
+            }
+```
+
+# Bucles
+
+## for
+```
+            for (int i = 0; i < arreglo.Length; i++)
+            {
+                Console.Write(arreglo[i]);
+            }
+```
+
+## while
+```
+            while (k < arreglo.Length)
+            {
+                Console.WriteLine(arreglo[k]);
+                k++;
+            }
+```
+			
+## Do while
+```
+            do
+            {
+                Console.WriteLine(arreglo[j]);
+				j++;
+
+            } while (j < arreglo.Length);
+```
+
+## foreach
+```
+            foreach (var item in arreglo)
+            {
+                Console.WriteLine(item);
+            }
+```
 
 
 # ENCAPSULAMIENTO (namespaces)
@@ -122,10 +233,13 @@ Curso: https://www.udemy.com/course/c-sharp-para-principiantes/
 
 # APUNTES
 - Leer datos desde el teclado: `int a = Int.Parse(Console.ReadLine());`
-- convertir int a string: `Int.Parse(algo);`
-- convertir string a int: `algo.ToString();`
-- mostrar en consola: `Console.WriteLine();`
-- formato: `string.Format();`
+- Convertir int a string: `Int.Parse(algo);`
+- Convertir string a int: `algo.ToString();`
+- Mostrar en consola por linea: `Console.WriteLine();`
+	- Ejemplo: `Console.WriteLine("Primero: {0}, Segundo: {1}, Tercero: {2}", aaa, bbb, ccc);`
+- Mostrar en consola sin saltos de linea: `Console.Write();`
+- Formato: `string.Format();`
+
 
 
 

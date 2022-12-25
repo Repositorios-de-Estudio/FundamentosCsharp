@@ -17,7 +17,7 @@ namespace Condicionales
              * *sentencias**
              *  if
              *  if - else
-             *  if else if - if
+             *  if else if - else
              *  switch
              * 
              * Operadores logicos:
