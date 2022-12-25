@@ -1,4 +1,4 @@
-# FundamentosCsharp
+# Fundamentos de C#
 
 Curso: https://www.udemy.com/course/c-sharp-para-principiantes/
 
@@ -26,15 +26,13 @@ Curso: https://www.udemy.com/course/c-sharp-para-principiantes/
 
 
 # Historia:
-version 1.0 - 2002
-version 11 - 2022
+version 1.0: 2002
+version 11.0 :2022
 
 # Ventajas de usar POO
 - Modelo inspirado en objetos reales
 - Reuso del codigo
 - Facil de mantener
-
-
 
 
 
