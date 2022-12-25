@@ -88,15 +88,20 @@ Curso: https://www.udemy.com/course/c-sharp-para-principiantes/
 - `bool boo = true;`
 - Arreglos (`arreglo[ ]`)
 	- Cacrateristicas:
-		- declarar: `int[] arreglo = new int[n];` // n: tamaño
-		- declarar: `char[] vocales = {'a','e', 'i', 'o', 'u'};`
-		- declarar: `char[] vocales = new char[] {'a','e', 'i', 'o', 'u'};`
-		- primer indice: 0
-		- ultimo indice: arreglo.Length-1;
+		- Declarar: `int[] arreglo = new int[n];` // n: tamaño
+		- Declarar: `char[] vocales = {'a','e', 'i', 'o', 'u'};`
+		- Declarar: `char[] vocales = new char[] {'a','e', 'i', 'o', 'u'};`
+		- Primer indice: 0
+		- Ultimo indice: arreglo.Length-1;
 		- get: `int var = arreglo[i]`
 		- set: `arreglo[i] = var`
-		- multimencionales, filas y columnas `matriz[i][j]`
-		- los arreglos no pueden cambiar de tamaño, tamaño dinamico usar  ArrayList 
+		- Multimencionales, filas y columnas `matriz[i][j]`
+		- Los arreglos no pueden cambiar de tamaño, tamaño dinamico usar  ArrayList 
+		- Copiar arreglo: `Array.Copy(lista, otraLista, longitud);`
+		- Invertir arreglo: `Array.Reverse(list);` // no necesita ser asignado a otra lista
+		- Ordenar arreglo: `Array.Sort(list);` // ascendente, no necesita ser asignado a otra lista
+- Clase Array:		
+
 
 ## Operadores de comparacion (retorna booleano)
 - Mayor que `>`
