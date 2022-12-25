@@ -105,22 +105,22 @@ Curso: https://www.udemy.com/course/c-sharp-para-principiantes/
 			- For:
 			
 ```
-            for (int fila = 0; fila < matriz.GetLength(0); fila++)
-            {
-                for (int colum = 0; colum < matriz.GetLength(1); colum++)
-                {
-                    Console.WriteLine("For anidado [ {0} , {1} ] : {2} ", fila, colum, matriz[fila,colum]);
-                }
-            }
+for (int fila = 0; fila < matriz.GetLength(0); fila++)
+{
+	for (int colum = 0; colum < matriz.GetLength(1); colum++)
+	{
+		Console.WriteLine("For anidado [ {0} , {1} ] : {2} ", fila, colum, matriz[fila,colum]);
+	}
+}
 ```
 			
 			- Foreach:
 			
 ```
-            foreach (var item in matriz)
-            {
-                Console.WriteLine("Foreach Matriz [ {0} ]", item);
-            }
+foreach (var item in matriz)
+{
+	Console.WriteLine("Foreach Matriz [ {0} ]", item);
+}
 ```
 		
 		
@@ -154,100 +154,100 @@ Curso: https://www.udemy.com/course/c-sharp-para-principiantes/
 
 ## if
 ```
-            if (num > 5)
-            {
-                Console.WriteLine("num es mayor que 5");
-            }
+if (num > 5)
+{
+	Console.WriteLine("num es mayor que 5");
+}
 ```
 
 
 ## if - else
 ```
-            int edad = 23;
-            if (edad >= 18)
-            {
-                Console.WriteLine("Es mayor de edad");
-            }
-            else
-            {
-                Console.WriteLine("Menor de edad");
-            }
+int edad = 23;
+if (edad >= 18)
+{
+	Console.WriteLine("Es mayor de edad");
+}
+else
+{
+	Console.WriteLine("Menor de edad");
+}
 ```
 
 
 ## if - else if - else
 ```
-            int a = 1;
-            int b = 6;
-            if (a > b)
-            {
-                Console.WriteLine("A es mayor que B");
-            }
-            else if (a == b)
-            {
-                Console.WriteLine("A es igual que B");
-            }
-            else
-            {
-                Console.WriteLine("A es menor que B");
-            }
+int a = 1;
+int b = 6;
+if (a > b)
+{
+	Console.WriteLine("A es mayor que B");
+}
+else if (a == b)
+{
+	Console.WriteLine("A es igual que B");
+}
+else
+{
+	Console.WriteLine("A es menor que B");
+}
 ```
 
 ## switch
 ```
-            string codigo = "A1X";
-            switch (codigo)
-            {
-                case "A1":
-                    Console.WriteLine("A1");
-                    break;
-                case "A2":
-                    Console.WriteLine("A2");
-                    break;
-                case "A3":
-                    Console.WriteLine("A3");
-                    break;
-                default:
-                    Console.WriteLine("No encontrado");
-                    break;
-            }
+string codigo = "A1X";
+switch (codigo)
+{
+	case "A1":
+		Console.WriteLine("A1");
+		break;
+	case "A2":
+		Console.WriteLine("A2");
+		break;
+	case "A3":
+		Console.WriteLine("A3");
+		break;
+	default:
+		Console.WriteLine("No encontrado");
+		break;
+}
 ```
 
 # Bucles
 
 ## for
 ```
-            for (int i = 0; i < arreglo.Length; i++)
-            {
-                Console.Write(arreglo[i]);
-            }
+for (int i = 0; i < arreglo.Length; i++)
+{
+	Console.Write(arreglo[i]);
+}
 ```
 
 ## while
 ```
-            while (k < arreglo.Length)
-            {
-                Console.WriteLine(arreglo[k]);
-                k++;
-            }
+while (k < arreglo.Length)
+{
+	Console.WriteLine(arreglo[k]);
+	k++;
+}
 ```
 			
 ## Do while
 ```
-            do
-            {
-                Console.WriteLine(arreglo[j]);
-				j++;
+do
+{
+	Console.WriteLine(arreglo[j]);
+	j++;
 
-            } while (j < arreglo.Length);
+} while (j < arreglo.Length);
 ```
 
 ## foreach
 ```
-            foreach (var item in arreglo)
-            {
-                Console.WriteLine(item);
-            }
+foreach (var item in arreglo)
+{
+	Console.WriteLine(item);
+}
 ```
 
 
