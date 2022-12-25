@@ -31,6 +31,8 @@ namespace RETO_promedio_calificaciones
             {
                 Console.Write("Ingrese la calificación {0} de {1}: ", ii+1, lista.Length);
                 lista[ii] = Int32.Parse(Console.ReadLine());
+
+                // aca se puede ir haciendo la suma para el calculo del promedio
             }
                       
 
