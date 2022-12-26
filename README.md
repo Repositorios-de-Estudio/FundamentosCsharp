@@ -37,7 +37,7 @@ Curso: https://www.udemy.com/course/c-sharp-para-principiantes/
 - Se usa `override` en una sublcase para indicar en C# que se va a sobreescribir un metodo de la subclase: `public override string ToString() { return "";}` 
 - Se llama al constructor de la _superclase_ con : `base(param1, param2)`
 - Herencia sistanxis en C#: 
-	- Persona:
+	- Persona es _superclase__:
 	```
 		internal class Persona 
 		{ 
@@ -55,7 +55,7 @@ Curso: https://www.udemy.com/course/c-sharp-para-principiantes/
 			
 		}
 	```
-	- Empleado hereda de Persona
+	- Empleado hereda de Persona, es _sublcase_
 	```
 		internal class Empleado : Persona 
 		{ 
@@ -150,6 +150,7 @@ Curso: https://www.udemy.com/course/c-sharp-para-principiantes/
 		- Declarar: `int[ , ] matriz = { {0,1 }, {2,3}, {4,5} };`
 		- Declarar: `int[ , ] matriz = new int[3, 2];`
 		- Mostrar:
+		
 			- For:
 			
 ```
