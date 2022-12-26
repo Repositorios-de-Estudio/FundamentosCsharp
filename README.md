@@ -286,3 +286,14 @@ public static : No necesita tener un objeto instanciado para ser usado, los meto
 ## Visual estudio
 - Propiedades aparecen con icono de llave inglesa.
 - Metodos aparecen con icono de cubo.
+- Depuración:
+	- Definir brakpoint, click sobre la parte lateral gris mas a la izquierda
+	- Boton `Depurar - F5`
+		- La parte del codigo que se esta evaluando se sombre
+		- En la parte inferior se veran los valores de las variables
+		- Controles: 
+			- `F11`: por instruccion (para ver linea por linea)
+			- `F10`: por metodos
+			- `Mayus + F11`: salir por instruccion
+		- Colocando el cursor sobre una variable aparece la opcion de fijar su valor en la pantalla
+
