@@ -37,6 +37,24 @@ Curso: https://www.udemy.com/course/c-sharp-para-principiantes/
 - Se usa `override` en una sublcase para indicar en C# que se va a sobreescribir un metodo de la subclase: `public override string ToString() { return "";}` 
 - Se llama al constructor de la _superclase_ con : `base(param1, param2)`
 - Herencia sistanxis en C#: 
+	- Persona:
+	```
+		internal class Persona 
+		{ 
+			// cuerpo clase Persona
+			
+			public Persona():
+			{
+				// cuerpo constructor Persona
+			}
+			
+			public virtual void Saludar()
+			{
+				Console.WriteLine("Hola!!!");
+			}
+			
+		}
+	```
 	- Empleado hereda de Persona
 	```
 		internal class Empleado : Persona 
@@ -46,6 +64,11 @@ Curso: https://www.udemy.com/course/c-sharp-para-principiantes/
 			public Empleado(): base(aaa, bbb)
 			{
 				// cuerpo constructor Empleado
+			}
+			
+			public override void Saludar()
+			{
+				Console.WriteLine("Hola, Empleado");
 			}
 		}
 	```
