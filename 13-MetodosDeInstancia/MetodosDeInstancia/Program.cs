@@ -10,6 +10,7 @@ namespace MetodosDeInstancia
     /// </summary>
     class Program
     {
+        // proyecto descargado
         static void Main(string[] args)
         {
             CuentaBancaria cuenta1 = new CuentaBancaria("001", "John Doe", 100);
