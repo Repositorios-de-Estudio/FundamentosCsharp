@@ -23,6 +23,16 @@ Curso: https://www.udemy.com/course/c-sharp-para-principiantes/
 - Funciona mediante la mv CLR: Common Language Runtime (lo da .NET):
 	- Codigo a C# -> codigo CIL (common intermediate language) -> codigo nativo
 	- CIL: Administra memoria, seguridad de tipos, manejo de excepciones, recolector, administrador de hilos
+## Herencia
+- Una nueva clase toma los mismos atributos y metodos de otra clase
+	- Empleado Hereda de Persona, Empleaso hereda los mismos atributos y metodos de Persona
+	- Esto evita declarar atributos y metodos que son comunes con la clase Persona
+- La clase principal es llamada _superclase_ y la que hereda es llamada _subclase_
+- Cada _subclase_ puede convertirse es una _superclase_  
+	- De esta manera se puede tener un arbol de herencia: Animal <- Mamifero <- Felino <- Leon
+- C# solo soporta herencia simple, cada clase solo puede heredas de una sola clase
+	- 	La herencia multiple se tratar con Interfaces
+
 
 
 # Versiones:
