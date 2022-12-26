@@ -272,6 +272,7 @@ foreach (var item in arreglo)
 	- Ejemplo: `Console.WriteLine("Primero: {0}, Segundo: {1}, Tercero: {2}", aaa, bbb, ccc);`
 - Mostrar en consola sin saltos de linea: `Console.Write();`
 - Formato: `string.Format();`
+- Dar formato para que los numeros tengas una cantidad fija (nn.nn): `Console.Write("{0:00.#0}", matriz[i]);`;
 
 
 
