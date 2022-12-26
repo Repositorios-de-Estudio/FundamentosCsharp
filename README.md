@@ -23,6 +23,7 @@ Curso: https://www.udemy.com/course/c-sharp-para-principiantes/
 - Funciona mediante la mv CLR: Common Language Runtime (lo da .NET):
 	- Codigo a C# -> codigo CIL (common intermediate language) -> codigo nativo
 	- CIL: Administra memoria, seguridad de tipos, manejo de excepciones, recolector, administrador de hilos
+
 ## Herencia
 - Una nueva clase toma los mismos atributos y metodos de otra clase
 	- Empleado Hereda de Persona, Empleaso hereda los mismos atributos y metodos de Persona
@@ -32,8 +33,22 @@ Curso: https://www.udemy.com/course/c-sharp-para-principiantes/
 	- De esta manera se puede tener un arbol de herencia: Animal <- Mamifero <- Felino <- Leon
 - C# solo soporta herencia simple, cada clase solo puede heredas de una sola clase
 	- 	La herencia multiple se tratar con Interfaces
-
-
+- Se usa `virtual` en una superclase para indicar en C# que se puede sobreescribir el metodo en una subclase: `public virtual Metodo() {}`
+- Se usa `override` en una sublcase para indicar en C# que se va a sobreescribir un metodo de la subclase: `public override string ToString() { return "";}` 
+- Se llama al constructor de la _superclase_ con : `base(param1, param2)`
+- Herencia sistanxis en C#: 
+	- Empleado hereda de Persona
+	```
+		internal class Empleado : Persona 
+		{ 
+			// cuerpo clase Empleado
+			
+			public Empleado(): base(aaa, bbb)
+			{
+				// cuerpo constructor Empleado
+			}
+		}
+	```
 
 # Versiones:
 - version 1.0: 2002
@@ -265,12 +280,13 @@ foreach (var item in arreglo)
 - Mecanismo para ocultar datos
 - Los datos de una clase solo son accesibles a traves de las propiedades y metodos designados
 - Garantiza la integridad de los datos que contiene el objeto
+- `using <ruta del archivo>` para importar un metodo o clase de otro archivo
 
 # Niveles de acceso
-- public: accesible por todos
-- internal: todos dentro del mismo ensamblado pueden acceder
-- protected:todas las subclases pueden acceder
-- private: solo la clase puede acceder
+- `public`: accesible por todos
+- `internal`: todos dentro del mismo ensamblado pueden acceder
+- `protected`:todas las subclases pueden acceder
+- `private`: solo la clase puede acceder
 
 
 # APUNTES
