@@ -120,7 +120,7 @@ Clase Object
 	```
 	- `GetHashCode`
 	```
-	        public override int GetHashCode()
+	    public override int GetHashCode()
         {
             //numero primo
             int hash = 104297;
