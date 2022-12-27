@@ -409,8 +409,26 @@ foreach (var item in arreglo)
 - Formato: `string.Format();`
 - Dar formato para que los numeros tengas una cantidad fija (nn.nn): `Console.Write("{0:00.#0}", matriz[i]);`;
 - En los atributos de las propiedades`{get (...);` y `{set (...)}` se puede usar `get => blabla;` en vez de `get { return blabla; }`
+- Implementar la interfaz `IComparable` para que por ejemplo funcione `Array.Sort();` con cualquier tipo de objeto
+	- Ejemplo: A la clase Producto se le implementa la interfaz para poder ordenar los productos
+	```
+	    internal class Producto : IComparable<Producto>
+    {
+        public string Codigo { get; set; }
+        public decimal Precio { get; set; }
 
+        public int CompareTo(Producto other)
+        {
+            // comprar en base a su precio
 
+            // > 0 es mayor, == 0 son iguales, < -1 es menor
+
+            if (Precio > other.Precio) { return 1; }
+            else if (Precio == other.Precio) { return 0; }
+            else { return -1;}
+        }
+    }
+	```
 
 
 las propiedades de la clase deben ir con Public y nombe empieza con Mayuscula
