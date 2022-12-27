@@ -24,7 +24,10 @@ Curso: https://www.udemy.com/course/c-sharp-para-principiantes/
 	- Codigo a C# -> codigo CIL (common intermediate language) -> codigo nativo
 	- CIL: Administra memoria, seguridad de tipos, manejo de excepciones, recolector, administrador de hilos
 
-## Herencia
+# Herencia
+
+## Herencia desde una clase
+
 - Una nueva clase toma los mismos atributos y metodos de otra clase
 	- Empleado Hereda de Persona, Empleaso hereda los mismos atributos y metodos de Persona
 	- Esto evita declarar atributos y metodos que son comunes con la clase Persona
@@ -73,6 +76,26 @@ Curso: https://www.udemy.com/course/c-sharp-para-principiantes/
 			}
 		}
 	```
+
+## Clase Abstracta
+- La clase abstracta puede funcionar si cumple una de estas dos:
+	- La clase que hereda implementa todas los metodos y propiedades abstractos
+	- Se vuelva así misma una clase abstracta
+- Las clases abstractas pueden heredas de otra clase abstracta
+- No son instaciables (no se pueden crear objetos)
+- Declara metodos que se deben sobreescribir en la clase que herede de esta
+	- Se pueden crear metodos no abstractos
+- Cuando se tienen varias clases que comparten metodos y propiedades que funcionan diferente
+- Se declara `abstracra class` en vez de `class`
+- Se usa `public abstract int Propiedad {get; set};` para denotar que solo se hace la estructura de la propiedad y es inicializa por la clase que herede de esta
+	- Por ejemplo si se quiere calcular salario pero cada _subclase_ que lo implementa aplica una formula matematica diferente, uno de `salario*1.1` y otro de `salario*1.5`
+	- Esto facilita que al pedir salario retorne el salario para cada caso y no tener que calcularlo en un metodo diferente
+	- Esta propiedad no va en el constructor de la _superclase_
+	- Se implementa en la _subclase_ con `override` asi: `public override decimal Salario {get (...); set(...);}`
+- Se usa `public abstract void MetodoAbs();` para estructurar el metodo que debe implementar la clase que herede esta 
+	- No se colocan corchetes, indica que no tiene implementacion
+- Se indica la herencia de la clase abstracta asi: `internal class Clase2 : Clase1 { //cuerpo Clase2 }`
+- 
 
 # Versiones:
 - version 1.0: 2002
@@ -324,6 +347,7 @@ foreach (var item in arreglo)
 - Mostrar en consola sin saltos de linea: `Console.Write();`
 - Formato: `string.Format();`
 - Dar formato para que los numeros tengas una cantidad fija (nn.nn): `Console.Write("{0:00.#0}", matriz[i]);`;
+- En los atributos de las propiedades`{get (...);` y `{set (...)}` se puede usar `get => blabla;` en vez de `get { return blabla; }`
 
 
 
