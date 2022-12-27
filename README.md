@@ -150,9 +150,13 @@ Clase Object
 - Una clase puede implementar varias interfaces
 - Las interfaces deben empezar con I mayuscula: Interfaz Encendible = IEncencible
 - Upcasting: Moldea/castea un objeto del tipo _subclase_ al tipo de una de su _superclase_
-	- Array de tipo Mueble, silla de tipo Silla: array[0]= silla; // implicitamente se castea a tipo Mueble
+	- Array de tipo Mueble, silla de tipo Silla: `array[0]= silla;` // implicitamente se castea a tipo Mueble
 - Downcasting: Moldea/castea un objeto del tipo _superclase_ al tipo de una _subclase_
-	- Array de tipo Mueble, silla de tipo Silla: otraSilla = (Silla)array[0];
+	- Array de tipo Mueble, silla de tipo Silla: `Circulo otraSilla = array[0] as Circulo;`
+- Se declara con `interface`
+- Implicitamente todos las propiedades y metodos son `interface` para no tener que escribirlo
+- Implicitamente todos las propiedades y metodos son `public` para no tener que escribirlo
+
 
 
 # Versiones:
@@ -193,6 +197,7 @@ Clase Object
 - Multiplicacion: `* `
 - Division: `/`
 - Modulo: `%`
+- Potencia: `a = Math.Pow(var, n);` // n es la potencia
 
 
 # Operadores
