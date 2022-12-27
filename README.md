@@ -95,7 +95,45 @@ Curso: https://www.udemy.com/course/c-sharp-para-principiantes/
 - Se usa `public abstract void MetodoAbs();` para estructurar el metodo que debe implementar la clase que herede esta 
 	- No se colocan corchetes, indica que no tiene implementacion
 - Se indica la herencia de la clase abstracta asi: `internal class Clase2 : Clase1 { //cuerpo Clase2 }`
-- 
+
+Clase Object
+- Todas las clases heredan de Object
+- Contiene metodos propios
+	- Por ejemplo: `Equals`, `GetHashCode`
+- Se deben reescribir las clases, en caso contrario se usa la comparación por referencia
+- Ejemplo:
+	- `Equals`
+	```
+        public override bool Equals(object obj)
+        {
+            /* primero se valida que los objetos sea del mismo tipo */
+
+            if (obj == null) return false;
+
+            // se castea obj como persona
+            Persona p = obj as Persona;
+            if (p == null) return false;
+
+            /* luego se comprueba que sus propiedades tengan el mismo valor */
+            return (Nombre == p.Nombre) && (Edad == p.Edad);
+        }
+	```
+	- `GetHashCode`
+	```
+	        public override int GetHashCode()
+        {
+            //numero primo
+            int hash = 104297;
+
+            // se calcula el hash con otro numero primo y se les suma los hash de las propiedades
+            hash = (hash * 103919) + Nombre.GetHashCode();
+            hash = (hash * 103919) + Edad.GetHashCode();
+
+            return hash;
+        }
+	```
+
+
 
 # Versiones:
 - version 1.0: 2002
@@ -173,8 +211,7 @@ Curso: https://www.udemy.com/course/c-sharp-para-principiantes/
 		- Declarar: `int[ , ] matriz = new int[3, 2] { {0,1 }, {2,3}, {4,5} };`
 		- Declarar: `int[ , ] matriz = { {0,1 }, {2,3}, {4,5} };`
 		- Declarar: `int[ , ] matriz = new int[3, 2];`
-		- Mostrar:
-		
+		- Mostrar:		
 			- For:
 			
 ```
@@ -185,8 +222,7 @@ for (int fila = 0; fila < matriz.GetLength(0); fila++)
 		Console.WriteLine("For anidado [ {0} , {1} ] : {2} ", fila, colum, matriz[fila,colum]);
 	}
 }
-```
-			
+```			
 			- Foreach:
 			
 ```
@@ -208,7 +244,7 @@ foreach (var item in matriz)
 - Menor que `<`
 - Mayor o igual que `>=`
 - Menor o igual que `<=`
-- Igual `==`
+- Igual `==` // comparacion por referencia
 - Difernete `!=`
 
 ## Operadores Logicos
