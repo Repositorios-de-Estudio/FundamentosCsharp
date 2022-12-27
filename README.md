@@ -81,8 +81,9 @@ Curso: https://www.udemy.com/course/c-sharp-para-principiantes/
 - La clase abstracta puede funcionar si cumple una de estas dos:
 	- La clase que hereda implementa todas los metodos y propiedades abstractos
 	- Se vuelva así misma una clase abstracta
+- Se pueden definir metodos y propiedades abstractos y no abstractos
 - Las clases abstractas pueden heredas de otra clase abstracta
-- No son instaciables (no se pueden crear objetos)
+- No son instanciables (no se pueden crear objetos)
 - Declara metodos que se deben sobreescribir en la clase que herede de esta
 	- Se pueden crear metodos no abstractos
 - Cuando se tienen varias clases que comparten metodos y propiedades que funcionan diferente
@@ -133,6 +134,25 @@ Clase Object
         }
 	```
 
+# Poliformismo
+- Habilidad de poder realizar operaciones con objetos de distinto tipo
+	- ej: objetos distinto tipo TV, auto, Lampar se pueden "Encender"
+- Permite crear sistemas escalables
+- Objetos de distinto tipo se comportan como uno solo
+- Reuso de codigo
+- Se aplica con Interfaces y Herencia
+
+## Interfaces
+- Define metodos y propiedades abstractos
+- Todos los metodos y propiedades deben ser abstractos
+- Todos los metodos y propiedades deben ser implementados por la clase que hereda
+- Una interfaz es como un molde rigido para una clase
+- Una clase puede implementar varias interfaces
+- Las interfaces deben empezar con I mayuscula: Interfaz Encendible = IEncencible
+- Upcasting: Moldea/castea un objeto del tipo _subclase_ al tipo de una de su _superclase_
+	- Array de tipo Mueble, silla de tipo Silla: array[0]= silla; // implicitamente se castea a tipo Mueble
+- Downcasting: Moldea/castea un objeto del tipo _superclase_ al tipo de una _subclase_
+	- Array de tipo Mueble, silla de tipo Silla: otraSilla = (Silla)array[0];
 
 
 # Versiones:
