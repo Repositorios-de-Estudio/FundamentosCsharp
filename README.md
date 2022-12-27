@@ -198,6 +198,13 @@ Clase Object
 - Division: `/`
 - Modulo: `%`
 - Potencia: `a = Math.Pow(var, n);` // n es la potencia
+- Raiz cuadrada: `a = Math.Sqrt(base);`
+
+# Estructuras
+- Tipo de dato similar a una clase que permite crear entidades con propiedades y metodos que no requiren de herencia o polimorfismo
+- Crear una clase y cambiar de `class` a `struct`
+- No se puede definir el constructor vacio, no se debe crear
+- Todos los constructores deben llamar al constructor vacio:  `public Vector(double x): this(){....}`
 
 
 # Operadores
