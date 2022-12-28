@@ -205,6 +205,8 @@ Clase Object
 - Crear una clase y cambiar de `class` a `struct`
 - No se puede definir el constructor vacio, no se debe crear
 - Todos los constructores deben llamar al constructor vacio:  `public Vector(double x): this(){....}`
+- 
+	- Tipos de referencia = clases, tipos de valor = estructuras
 - Si los datos son sencillos usar estructura, si son datos complejos entonces usar clase
 
 # Operadores
