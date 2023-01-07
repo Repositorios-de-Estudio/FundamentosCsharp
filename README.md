@@ -478,7 +478,13 @@ foreach (var item in arreglo)
 - Fecha y hora actual: `DateTime.Now;`
 - Agregar dias: `var.AddDays(valor);` // no muta
 - Restar dias: `var.AddDays(-valor);` // no muta
-- Restar dos fechas: `var.Subtract(otraVar;`) //no muta
+- Restar dos fechas: `var.Subtract(otraVar;`) // no muta
+
+## Numeros aleatorios
+- Declaracion: Random var = new Random(); // sin semilla
+- Declaracion: Random var = new Random(primo); // con semilla numero primo
+- Numero en un intervalo: var.Next(i, j); // j no esta incluido, va hasta j-1
+- Probabilidad (doble): var.NextDouble() // retorna double entre 0 y 1
 
 # APUNTES
 - Leer datos desde el teclado: `int a = Int.Parse(Console.ReadLine());`
