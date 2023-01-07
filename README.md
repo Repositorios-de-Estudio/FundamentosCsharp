@@ -206,8 +206,9 @@ Clase Object
 - No se puede definir el constructor vacio, no se debe crear
 - Todos los constructores deben llamar al constructor vacio:  `public Vector(double x): this(){....}`
 - 
-	- Tipos de referencia = clases, tipos de valor = estructuras
-- Si los datos son sencillos usar estructura, si son datos complejos entonces usar clase
+
+
+
 
 # Operadores
 
@@ -391,6 +392,37 @@ foreach (var item in arreglo)
 {
 	Console.WriteLine(item);
 }
+```
+
+#  TIPOS DE REFERENCIA VS TIPOS DE VALOR
+
+- Los Tipos de referencia son Clases
+	- Al hacer una asignación creando otro objeto, se crea una referencia al objeto original
+	- Al hacer cambios al otro objeto se modifica el objeto original porque usa la referencia
+- Los Tipos de valor son Estructuras
+	- Al hacer una asignación creando otro objeto, se crea una copia del objeto original
+	- Al hacer cambios a la copia no se modifica el objeto original, ya que hace referencia a otro objeto
+- Si los datos son sencillos usar estructura, si son datos complejos entonces usar clase
+
+
+- Clase (referencias)
+```
+    internal class PuntoRef
+    {
+	...
+	}
+```
+- Estructura (valores)
+```
+    internal struct PuntoVal
+    {
+	...
+	}
+	
+	public PuntoVal(int x, int y): this()
+    {
+	...
+	}
 ```
 
 
