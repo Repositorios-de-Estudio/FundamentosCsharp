@@ -462,7 +462,7 @@ foreach (var item in arreglo)
 - `protected`:todas las subclases pueden acceder
 - `private`: solo la clase puede acceder
 
-# FORMATO TEXTO
+## FORMATO TEXTO
 - Crear cadena: `string result = string.Format("Aca texto {0}. ", var);`
 - Mostrar texto con formato: `Console.Write("Pi: {0:0.0000}", Math.PI);` // ver 1 entero y 4 decimales
 - Ajustar espacios a la derecha: `Console.WriteLine("Texto{0, k}",var);`   // ajustar el texto en K espacios como un tabulador
@@ -472,6 +472,13 @@ foreach (var item in arreglo)
 - Formato en Moneda: `Console.WriteLine("{0:C}", valor);`
 - Formato en Porcentaje: `Console.WriteLine("{0:P}", valor);`
 - Formato en Hexa: `Console.WriteLine("{0:X}", valor);  `          
+
+## Fechas
+- Declaracion: `DateTime var = new DateTime();` // hay varios constructores
+- Fecha y hora actual: `DateTime.Now;`
+- Agregar dias: `var.AddDays(valor);` // no muta
+- Restar dias: `var.AddDays(-valor);` // no muta
+- Restar dos fechas: `var.Subtract(otraVar;`) //no muta
 
 # APUNTES
 - Leer datos desde el teclado: `int a = Int.Parse(Console.ReadLine());`

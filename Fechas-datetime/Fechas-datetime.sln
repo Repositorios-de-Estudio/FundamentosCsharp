@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FomatoCadenas", "FomatoCadenas\FomatoCadenas.csproj", "{5B7F4E9A-5ECF-4C9C-8AB4-5001864CC29D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fechas-datetime", "Fechas-datetime\Fechas-datetime.csproj", "{DC86192E-BEE9-47B9-8EAC-EC5F18DCF4AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5B7F4E9A-5ECF-4C9C-8AB4-5001864CC29D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5B7F4E9A-5ECF-4C9C-8AB4-5001864CC29D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5B7F4E9A-5ECF-4C9C-8AB4-5001864CC29D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5B7F4E9A-5ECF-4C9C-8AB4-5001864CC29D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC86192E-BEE9-47B9-8EAC-EC5F18DCF4AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC86192E-BEE9-47B9-8EAC-EC5F18DCF4AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC86192E-BEE9-47B9-8EAC-EC5F18DCF4AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC86192E-BEE9-47B9-8EAC-EC5F18DCF4AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {7C7DE216-E680-4D88-9C7A-C26DDFEDCDE1}
+		SolutionGuid = {B4673FFB-554E-4668-8D43-F1553BB02AC3}
 	EndGlobalSection
 EndGlobal
