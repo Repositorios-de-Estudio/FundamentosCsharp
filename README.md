@@ -481,10 +481,10 @@ foreach (var item in arreglo)
 - Restar dos fechas: `var.Subtract(otraVar;`) // no muta
 
 ## Numeros aleatorios
-- Declaracion: Random var = new Random(); // sin semilla
-- Declaracion: Random var = new Random(primo); // con semilla numero primo
-- Numero en un intervalo: var.Next(i, j); // j no esta incluido, va hasta j-1
-- Probabilidad (doble): var.NextDouble() // retorna double entre 0 y 1
+- Declaracion: `Random var = new Random();` // sin semilla
+- Declaracion: `Random var = new Random(primo);` // con semilla numero primo
+- Numero en un intervalo: `var.Next(i, j);` // j no esta incluido, va hasta j-1
+- Probabilidad (doble): `var.NextDouble();` // retorna double entre 0 y 1
 
 # APUNTES
 - Leer datos desde el teclado: `int a = Int.Parse(Console.ReadLine());`
@@ -542,4 +542,16 @@ public static : No necesita tener un objeto instanciado para ser usado, los meto
 			- `F10`: por metodos
 			- `Mayus + F11`: salir por instruccion
 		- Colocando el cursor sobre una variable aparece la opcion de fijar su valor en la pantalla
-
+- Comentar tetxo seleccionado: `Ctrl + k + Ctrl + c`
+- Descomentar tetxo seleccionado: `Ctrl + k + Ctrl + u`
+- Ver snippeds > Click derecho > insertar fragmento de codigo > Visual C# 
+- Snipped `Console.WriteLine();` se escribe `cw` y tabulador dos veces
+- Snipped `class` genera una clase
+- Snipped `prop` propiedad
+- Snipped `for` genera for 
+- Snipped `foreach` genera for
+- Snipped `while` genera for
+- Formatear archivo como codigo: `Ctrl + k + Ctrl + D`
+- Buscar: Ctrl + F
+- Reemplazar: Ctrl + H
+- 
