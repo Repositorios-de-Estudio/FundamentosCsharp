@@ -486,6 +486,38 @@ foreach (var item in arreglo)
 - Numero en un intervalo: `var.Next(i, j);` // j no esta incluido, va hasta j-1
 - Probabilidad (doble): `var.NextDouble();` // retorna double entre 0 y 1
 
+# Excepciones 
+
+- Bloque Try - catch:
+```
+try
+{
+	...
+}
+catch (Exception ex)
+{
+
+	Console.WriteLine("Error Mensaje: " + ex.Message);
+}
+```
+
+- Bloque Try con varios Catch segun tipo:
+```
+try
+{
+	...
+}
+catch (FormatException exf)
+{
+
+	Console.WriteLine("Error de formato: " + exf.Message);
+}
+catch (DivideByZeroException exd)
+{
+	Console.WriteLine("La division entre 0 no esta definida: " + exd.Message);
+}
+```
+
 # APUNTES
 - Leer datos desde el teclado: `int a = Int.Parse(Console.ReadLine());`
 - Leer datos desde el teclado: `int a = Convert.ToInt32(Console.ReadLine());`
@@ -552,6 +584,6 @@ public static : No necesita tener un objeto instanciado para ser usado, los meto
 - Snipped `foreach` genera for
 - Snipped `while` genera for
 - Formatear archivo como codigo: `Ctrl + k + Ctrl + D`
-- Buscar: Ctrl + F
-- Reemplazar: Ctrl + H
+- Buscar: `Ctrl + F`
+- Reemplazar: `Ctrl + H`
 - 
