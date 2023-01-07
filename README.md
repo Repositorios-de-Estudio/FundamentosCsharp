@@ -1,6 +1,7 @@
 # Fundamentos de C#
 
 Curso: https://www.udemy.com/course/c-sharp-para-principiantes/
+Documentacion C#: https://learn.microsoft.com/es-es/dotnet/
 
 
 ## Areas de aplicacion de C#
@@ -586,4 +587,4 @@ public static : No necesita tener un objeto instanciado para ser usado, los meto
 - Formatear archivo como codigo: `Ctrl + k + Ctrl + D`
 - Buscar: `Ctrl + F`
 - Reemplazar: `Ctrl + H`
-- 
+- Documentación: `F1`
