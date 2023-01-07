@@ -171,6 +171,8 @@ Clase Object
 
 # Variables y Tipos
 
+- Asignacion nula: `int variable = null;`
+
 ## Tipos enteros
 - `int` -> `System.Int32`
 - `short` -> `System.Int16`
@@ -206,9 +208,6 @@ Clase Object
 - No se puede definir el constructor vacio, no se debe crear
 - Todos los constructores deben llamar al constructor vacio:  `public Vector(double x): this(){....}`
 - 
-
-
-
 
 # Operadores
 
@@ -287,7 +286,20 @@ foreach (var item in matriz)
 - OR: `||`
 - Negacion: `!`
 
-
+## Operaciones con cadenas
+- Concatenacion: `+`
+- Concatenacion: `string.Concat(a,b,c);`
+- Tamaño: `var.Length;`
+- Todo a mayusculas: `var.ToUpper();` // no muta 
+- Todo a minusculas: `var.ToLower();` // no muta
+- Reemplazar: `var.Replace(string1, string2);` // no muta
+- Acceder a caracteres: `var[indice];`
+- Sub-cadena: `var.Substring(i,j);` //incluyendo, hasta n-1
+- Contiene sub cadena: `var.Contains(otroString));` // retorna bool
+- Comienza con: `var.StartsWith(otroString);` //retorna bool
+- Es vacio o nulo: `string.IsNullOrEmpty(var);`
+- Es vacio o nulo o solo contiene caracteres en blanco: `string.IsNullOrWhiteSpace(var));`
+- Indice de subcadena: `cadena.IndexOf(otroString);` // retorna -1 o natural
 
 
 # Condicionales:
@@ -479,6 +491,11 @@ Los metodos de la clase deben ir con Public seguido del tipo de retorno (void, i
 
 public static : No necesita tener un objeto instanciado para ser usado, los metodos static no pueden modificar directamente las propiedades que no son static
 				- es util cuando se necesita tener o hacer algo a todas las instancias por igual
+
+
+Caracter de espacpe para ":
+- `Console.WriteLine("Palabra con \"de\".");` resultado: `Palabra con "de".`
+
 
 ## Visual estudio
 - Propiedades aparecen con icono de llave inglesa.
