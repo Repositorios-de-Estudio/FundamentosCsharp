@@ -402,7 +402,9 @@ foreach (var item in arreglo)
 - Los Tipos de valor son Estructuras
 	- Al hacer una asignación creando otro objeto, se crea una copia del objeto original
 	- Al hacer cambios a la copia no se modifica el objeto original, ya que hace referencia a otro objeto
-- Si los datos son sencillos usar estructura, si son datos complejos entonces usar clase
+- Usar una estructura cuando:
+	- Son datos simples con pocas propiedades
+	- No se necesita herencia
 
 
 - Clase (referencias)
