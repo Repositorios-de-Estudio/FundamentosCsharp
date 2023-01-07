@@ -286,13 +286,13 @@ foreach (var item in matriz)
 - OR: `||`
 - Negacion: `!`
 
-## Operaciones con cadenas
+## Operaciones con cadenas (no mutables)
 - Concatenacion: `+`
 - Concatenacion: `string.Concat(a,b,c);`
 - Tamaño: `var.Length;`
-- Todo a mayusculas: `var.ToUpper();` // no muta 
-- Todo a minusculas: `var.ToLower();` // no muta
-- Reemplazar: `var.Replace(string1, string2);` // no muta
+- Todo a mayusculas: `var.ToUpper();` 
+- Todo a minusculas: `var.ToLower();` 
+- Reemplazar: `var.Replace(string1, string2);`
 - Acceder a caracteres: `var[indice];`
 - Sub-cadena: `var.Substring(i,j);` //incluyendo, hasta n-1
 - Contiene sub cadena: `var.Contains(otroString));` // retorna bool
@@ -300,7 +300,6 @@ foreach (var item in matriz)
 - Es vacio o nulo: `string.IsNullOrEmpty(var);`
 - Es vacio o nulo o solo contiene caracteres en blanco: `string.IsNullOrWhiteSpace(var));`
 - Indice de subcadena: `cadena.IndexOf(otroString);` // retorna -1 o natural
-
 
 # Condicionales:
 
@@ -406,7 +405,7 @@ foreach (var item in arreglo)
 }
 ```
 
-#  TIPOS DE REFERENCIA VS TIPOS DE VALOR
+# TIPOS DE REFERENCIA VS TIPOS DE VALOR
 
 - Los Tipos de referencia son Clases
 	- Al hacer una asignación creando otro objeto, se crea una referencia al objeto original
@@ -438,6 +437,17 @@ foreach (var item in arreglo)
 	...
 	}
 ```
+
+## String Builder
+- Declaración: `StringBuilder var = new StringBuilder("CADENA");`
+- El tamaño crece dinamicamente
+- Longitud: `var.Length;`
+- Capacidad maxima: `var.Capacity;` // la capacidad es alterada automaticamente o es posible modificarla
+- Cambiar capacidad: `var.EnsureCapacity(valor);` // valor: int
+- Concatenación (muta): `var.Append(otroString);` // solo se usa un objeto
+- Insertar (muta): `cadenaBL.Insert(i,otroString);` // indice int i
+
+
 
 
 # ENCAPSULAMIENTO (namespaces)
@@ -491,11 +501,9 @@ Los metodos de la clase deben ir con Public seguido del tipo de retorno (void, i
 
 public static : No necesita tener un objeto instanciado para ser usado, los metodos static no pueden modificar directamente las propiedades que no son static
 				- es util cuando se necesita tener o hacer algo a todas las instancias por igual
-
-
-Caracter de espacpe para ":
-- `Console.WriteLine("Palabra con \"de\".");` resultado: `Palabra con "de".`
-
+- Caracter de espacape para comillas dobles ":
+	- `Console.WriteLine("Palabra con \"de\".");` resultado: `Palabra con "de".`
+- Las operaciones con cadenas pueden afectar el rendimiento por lo que se deberia usar String Builder
 
 ## Visual estudio
 - Propiedades aparecen con icono de llave inglesa.
