@@ -42,14 +42,21 @@ namespace Proyetco_final_Agenda_de_contactos
 
             do
             {
-                nuevoMenu.MostrarMenu();
-                op = int.Parse(Console.ReadLine());
-                //nuevoMenu.NavegadorMenu(op);
-                //Console.Clear();
+                try
+                {
+                    nuevoMenu.MostrarMenu();
+                    op = int.Parse(Console.ReadLine());
+                    nuevoMenu.NavegadorMenu(op);
+                }
+                catch (Exception) // captura cuando no se presiona alguna de las opciones disponibles y temina el bucle
+                {
+
+                    op = 0;
+                }
 
             } while (op != 0);
 
-
+            Console.WriteLine("\n \n Gracias por usar La Agenda 2023 - MSP \n \n");
 
         }
   

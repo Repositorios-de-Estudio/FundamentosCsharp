@@ -20,6 +20,12 @@ namespace Proyetco_final_Agenda_de_contactos.Clases
         public Agenda()
         {
             ListaContactos = new Contacto[n];
+
+            for (int i = 0; i < ListaContactos.Length; i++)
+            {
+                ListaContactos[i] = new Contacto("",0,"");
+            }
+
             ListaTamano= 0;
         }
        
@@ -108,10 +114,12 @@ namespace Proyetco_final_Agenda_de_contactos.Clases
 
             for (int i = 0; i < Longitud(); i++)
             {
-                result.AppendLine(i+1+". "+ ListaContactos[i].ToString()+".");
+                result.AppendLine(i+1+". "+ ListaContactos[i].ToString());
             }
             
             return result.ToString();
         }
+
+
     }
 }

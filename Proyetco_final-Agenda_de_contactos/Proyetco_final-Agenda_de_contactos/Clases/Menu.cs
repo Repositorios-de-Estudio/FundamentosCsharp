@@ -8,21 +8,23 @@ namespace Proyetco_final_Agenda_de_contactos.Clases
 {
     internal class Menu
     {
+        public Agenda agenda { get; set; }
+
         public Menu() 
         {
             // nueva agenda
-            Agenda agenda = new Agenda();
+            agenda = new Agenda();
 
             // datos de prueba
-            agenda.AgregarContacto("Nombre Prueba1", 1234567, "nombre1@mm.com");
-            agenda.AgregarContacto("Nombre Prueba2", 7894561, "nombre2@mm.com");
-            agenda.AgregarContacto("Nombre Prueba3", 7418529, "nombre3@mm.com");
-            agenda.AgregarContacto("Nombre Prueba4", 9632587, "nombre4@mm.com");
+            agenda.AgregarContacto("Alberto Nuñes", 1234567, "nombre1@mm.com");
+            agenda.AgregarContacto("Zulon Tercero", 7894561, "nombre2@mm.com");
+            agenda.AgregarContacto("Abel Ariz", 7418529, "nombre3@mm.com");
+            agenda.AgregarContacto("Beto Ortiz", 9632587, "nombre4@mm.com");
         }
 
         public void MostrarMenu()
         {
-            Console.WriteLine("*** AGENDA DE CONTACTOS 2023 - MSP ***");
+            Console.WriteLine("*** AGENDA DE CONTACTOS 2023 - MSP *** \n");
 
             Console.WriteLine("-- Ingrese una opcion: --");
             Console.WriteLine("- 1. Ver Contactos.");
@@ -32,12 +34,26 @@ namespace Proyetco_final_Agenda_de_contactos.Clases
             Console.WriteLine("- 5. Borrar ultimo contacto.");
             Console.WriteLine("- 6. Buscar Contacto por nombre.");
             Console.WriteLine("- 7. Acerca de..");
-            Console.WriteLine("- 0. Salir.");
+            Console.WriteLine("- 0. Salir.\n");
         }
 
-
-        public void MenuVerContactos() { }
-        public void MenuOrdenarContactos(string modo) { }
+        public void Continuar() 
+        {
+            Console.WriteLine("\n \n Presione una tecla para continuar...");
+            Console.ReadKey();
+            Console.Clear();
+        }
+        public void MenuVerContactos()
+        {
+            Console.Clear();
+            Console.WriteLine(agenda);
+            Continuar();
+        }
+        public void MenuOrdenarContactos(string modo)
+        {
+            agenda.OrdenarContactos(modo);
+            MenuVerContactos();
+        }
 
         public void MenuAgregarContacto() { }
 
@@ -79,5 +95,9 @@ namespace Proyetco_final_Agenda_de_contactos.Clases
                     break;
             }
         }
+
+
+
+
     }
 }

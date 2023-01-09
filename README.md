@@ -99,11 +99,13 @@ Documentacion C#: https://learn.microsoft.com/es-es/dotnet/
 	- No se colocan corchetes, indica que no tiene implementacion
 - Se indica la herencia de la clase abstracta asi: `internal class Clase2 : Clase1 { //cuerpo Clase2 }`
 
-Clase Object
+## Clase Object
 - Todas las clases heredan de Object
 - Contiene metodos propios
 	- Por ejemplo: `Equals`, `GetHashCode`
 - Se deben reescribir las clases, en caso contrario se usa la comparación por referencia
+- Cuando se necesita compara una objetos por una de sus propiedades, ej: `Array.Sort()` se debe heredar de `IComparable`
+	- Se debe implementar `CompareTo`
 - Ejemplo:
 	- `Equals`
 	```
@@ -133,6 +135,14 @@ Clase Object
             hash = (hash * 103919) + Edad.GetHashCode();
 
             return hash;
+        }
+	```
+	- ``
+	```
+	    public int CompareTo(Object c2)
+        {
+            Contacto c3 = (Contacto)c2; // compara el nombre de dos contactos para decidir como ordenarlos
+            return this.Nombre.CompareTo(c3.Nombre);
         }
 	```
 
@@ -232,7 +242,7 @@ Clase Object
 - `decimal dec = 129.99m;` // siempre usar m, utlizado para operaciones financieras ideal para calculos
 - `char ccc = 'A';`
 - `bool boo = true;`
-- Arreglos (`arreglo[ ]`)
+- Listas (`arreglo[ ]`)
 	- Cacrateristicas:
 		- Declarar: `int[] arreglo = new int[n];` // n: tamaño
 		- Declarar: `char[] vocales = {'a','e', 'i', 'o', 'u'};`
@@ -243,7 +253,7 @@ Clase Object
 		- set: `arreglo[i] = var`
 		- Multimencionales, filas y columnas `matriz[i][j]`
 		- Los arreglos no pueden cambiar de tamaño, tamaño dinamico usar  ArrayList 
-- Arreglo bidimencional:
+- Listas bidimencional:
 		- Declarar: `int[ , ] matriz = new int[3, 2] { {0,1 }, {2,3}, {4,5} };`
 		- Declarar: `int[ , ] matriz = { {0,1 }, {2,3}, {4,5} };`
 		- Declarar: `int[ , ] matriz = new int[3, 2];`
@@ -270,10 +280,10 @@ foreach (var item in matriz)
 		
 		
 - Clase Array:
-		- Copiar arreglo: `Array.Copy(lista, otraLista, longitud);`
-		- Invertir arreglo: `Array.Reverse(list);` // no necesita ser asignado a otra lista
-		- Ordenar arreglo: `Array.Sort(list);` // ascendente, no necesita ser asignado a otra lista
-
+	- Declaracion: `ArrayList myAL = new ArrayList();`
+	- Copiar arreglo: `Array.Copy(lista, otraLista, longitud);`
+	- Invertir arreglo: `Array.Reverse(list);` // no necesita ser asignado a otra lista
+	- Ordenar arreglo: `Array.Sort(list);` // ascendente, no necesita ser asignado a otra lista
 
 ## Operadores de comparacion (retorna booleano)
 - Mayor que `>`
