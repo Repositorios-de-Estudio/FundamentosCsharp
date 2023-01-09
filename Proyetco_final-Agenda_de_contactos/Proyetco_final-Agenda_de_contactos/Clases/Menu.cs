@@ -201,6 +201,9 @@ namespace Proyetco_final_Agenda_de_contactos.Clases
                 "Realizado por Enrique Munguía\n" +
                 "Puede encontrar mas proyectos realizado por mi en:\n" +
                 "Github: sergioPerez-e" +
+                "\n" +
+                "Sonido de fondo: Música bit para videojuego indie\n" +
+                "Por: FreeGiver - pixabay.com" +
                 "\n\n" +
                 "Bogota, D.C / Colombia 2023\n\n";
 
