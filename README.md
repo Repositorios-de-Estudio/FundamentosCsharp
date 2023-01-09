@@ -3,6 +3,7 @@
 Curso: https://www.udemy.com/course/c-sharp-para-principiantes/
 Documentacion C#: https://learn.microsoft.com/es-es/dotnet/
 
+# MIS NOTAS
 
 ## Areas de aplicacion de C#
 - Aplicaciones de escritorio

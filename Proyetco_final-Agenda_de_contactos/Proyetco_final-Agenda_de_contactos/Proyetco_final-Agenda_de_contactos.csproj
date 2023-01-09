@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Clases\Agenda.cs" />
     <Compile Include="Clases\Contacto.cs" />
+    <Compile Include="Clases\Menu.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -22,11 +22,11 @@ namespace Proyetco_final_Agenda_de_contactos.Clases
             ListaContactos = new Contacto[n];
             ListaTamano= 0;
         }
-        /*
-         */
-        public bool AgregarContacto(Contacto ccc)
+       
+        public bool AgregarContacto(string nombre, int telefono, string correo)
         {
             bool rest = false;
+            Contacto ccc = new Contacto(nombre, telefono, correo);
 
             if (Longitud() < 20)
             {

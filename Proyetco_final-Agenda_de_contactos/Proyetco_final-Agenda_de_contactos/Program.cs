@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Proyetco_final_Agenda_de_contactos.Clases;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,31 +11,6 @@ namespace Proyetco_final_Agenda_de_contactos
     {
         static void Main(string[] args)
         {
-            /*
-             * PROYECTO FINAL - AGENDA DE CONTACTOS
-             */
-
-            //opcion del menu
-            int op = -1;
-
-            do
-            {            
-                Console.WriteLine("*** AGENDA DE CONTACTOS 2023 - MSP ***");
-
-                Console.WriteLine("-- Ingrese una opcion: --");
-                Console.WriteLine("- 1. Ver Contactos.");
-                Console.WriteLine("- 2. Ordenar Contactos (asc).");
-                Console.WriteLine("- 3. Ordenar Contactos (des).");
-                Console.WriteLine("- 4. Agregar Contacto.");
-                Console.WriteLine("- 5. Borrar ultimo contacto.");
-                Console.WriteLine("- 6. Buscar Contacto por nombre.");
-                Console.WriteLine("- 7. Acerca de..");
-                Console.WriteLine("- 0. Salir.");
-                op = int.Parse(Console.ReadLine());
-                Console.Clear();
-                
-            } while (op != 0);
-
             /*
              * PROYECTO FINAL - AGENDA DE CONTACTOS
              * 
@@ -59,6 +35,23 @@ namespace Proyetco_final_Agenda_de_contactos
              * - será necesario poder comprobar instancias de la clase Contacto (sobreescribir los metodos pertinentes de la clase Object y/o implementar interfaz IComparable
              * - El programa debe tener diseño orientado a objetos (cada clase con un proposito bien definido)
              */
+
+
+            int op = -1; //opcion del menu
+            Menu nuevoMenu = new Menu(); // aca se crean las opciones del menu y su interaccion
+
+            do
+            {
+                nuevoMenu.MostrarMenu();
+                op = int.Parse(Console.ReadLine());
+                //nuevoMenu.NavegadorMenu(op);
+                //Console.Clear();
+
+            } while (op != 0);
+
+
+
         }
+  
     }
 }
