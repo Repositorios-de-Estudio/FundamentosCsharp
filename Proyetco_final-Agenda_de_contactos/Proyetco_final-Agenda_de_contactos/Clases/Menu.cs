@@ -4,17 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Media;
+using WMPLib;
+
 
 namespace Proyetco_final_Agenda_de_contactos.Clases
 {
     internal class Menu
     {
         public Agenda agenda { get; set; }
-
+        private WindowsMediaPlayer wply { get; set; }
         public Menu() 
         {
             // nueva agenda
             agenda = new Agenda();
+
+            wply = new WindowsMediaPlayer();
+            wply.URL = "D:\\Users\\manue\\Documents\\GitHub\\FundamentosCsharp\\Proyetco_final-Agenda_de_contactos\\Proyetco_final-Agenda_de_contactos\\Media\\Sonidos\\musica-bit-para-videojuego-indie-114696.mp3";
+            reproducirSonido(false);
+
             PoblarAgenda();
         }
 
@@ -191,6 +199,8 @@ namespace Proyetco_final_Agenda_de_contactos.Clases
 
         public void MenuAcercaDe()
         {
+            reproducirSonido(true);
+
             String mensaje =
                 "Proyecto: Agenda de Contactos\n" +
                 "\n" +
@@ -212,14 +222,28 @@ namespace Proyetco_final_Agenda_de_contactos.Clases
 
             EscribirLento(mensaje);
 
-
+            reproducirSonido(false);
             Continuar();
 
         }
 
+        private void reproducirSonido(bool reproducir)
+        {
+            
+            if (reproducir)
+            {
+                wply.controls.play();
+            }
+            else
+            {
+                wply.controls.stop();
+            }
+
+
+        }
         private void EscribirLento(string texto)
         {
-            int velocidad = 10;
+            int velocidad = 190;
 
             foreach (var item in texto)
             {
