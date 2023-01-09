@@ -542,6 +542,7 @@ catch (DivideByZeroException exd)
 - Dar formato para que los numeros tengas una cantidad fija (nn.nn): `Console.Write("{0:00.#0}", matriz[i]);`;
 - En los atributos de las propiedades`{get (...);` y `{set (...)}` se puede usar `get => blabla;` en vez de `get { return blabla; }`
 - Implementar la interfaz `IComparable` para que por ejemplo funcione `Array.Sort();` con cualquier tipo de objeto
+- Puede ser mejor opcion usar `List<Clase> var` cuando se necesita ordenar eficientemente.
 	- Ejemplo: A la clase Producto se le implementa la interfaz para poder ordenar los productos
 	```
 	    internal class Producto : IComparable<Producto>
