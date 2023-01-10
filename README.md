@@ -604,3 +604,45 @@ public static : No necesita tener un objeto instanciado para ser usado, los meto
 - Buscar: `Ctrl + F`
 - Reemplazar: `Ctrl + H`
 - Documentación: `F1`
+
+
+
+# PROYECTO FINAL
+
+
+## PROYECTO FINAL - AGENDA DE CONTACTOS
+
+App de consola que permita:
+
+1. ver contactos
+ 1.1 orden ascendente por nombre
+ 1.2 orden descendente por nombre
+2. agregar contacto
+3. borrar ultimo contacto
+4. buscar contacto por nombre
+5. salir
+
+
+Contactos:
+- nombre
+- telefono
+- email
+
+
+## Consideraciones:
+- la agenda puede ser una estructura de almacenamiento con tamaño maximo de 20 elementos
+- será necesario poder comprobar instancias de la clase Contacto (sobreescribir los metodos pertinentes de la clase Object y/o implementar interfaz IComparable
+- El programa debe tener diseño orientado a objetos (cada clase con un proposito bien definido)
+
+## Cambios propios:
+ - Estructura:
+	- Clase de contactos: `Clase Contacto`
+	- Gestion de Contactos: `Clase Agenda`
+	- Interacción con el usuario: `Clase Menu`
+ - Validación de datos de entrada: `try() catch()`
+ - Propiedad Telefono como `int`
+ - Salir del programa con cualquier tecla
+ - Uso de `List<Contacto>` en vez de `Array`
+ - Uso de animacion de texto para los creditos en `Acerca de...`
+ - Proyecto disponible en: ".../40-Proyetco_final-Agenda_de_contactos"
+ 
