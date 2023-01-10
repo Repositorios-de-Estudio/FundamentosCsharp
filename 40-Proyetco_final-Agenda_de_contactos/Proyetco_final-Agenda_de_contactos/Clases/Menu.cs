@@ -12,17 +12,17 @@ namespace Proyetco_final_Agenda_de_contactos.Clases
 {
     internal class Menu
     {
-        public Agenda agenda { get; set; }
-        private WindowsMediaPlayer wply { get; set; }
+        private Agenda _AGENDA { get; set; }
+        private WindowsMediaPlayer _WPLY { get; set; }
         public Menu() 
         {
             // nueva agenda
-            agenda = new Agenda();
+            _AGENDA = new Agenda();
 
-            wply = new WindowsMediaPlayer();
-            wply.URL = "D:\\Users\\manue\\Documents\\GitHub\\FundamentosCsharp\\Proyetco_final-Agenda_de_contactos\\Proyetco_final-Agenda_de_contactos\\Media\\Sonidos\\musica-bit-para-videojuego-indie-114696.mp3";
+            _WPLY = new WindowsMediaPlayer();
+            _WPLY.URL = "D:\\Users\\manue\\Documents\\GitHub\\FundamentosCsharp\\40-Proyetco_final-Agenda_de_contactos\\Proyetco_final-Agenda_de_contactos\\Media\\Sonidos\\musica-bit-para-videojuego-indie-114696.mp3";
             reproducirSonido(false);
-
+            
             PoblarAgenda();
         }
 
@@ -43,13 +43,13 @@ namespace Proyetco_final_Agenda_de_contactos.Clases
 
         public void MenuVerContactos()
         {
-            Console.Clear();
-            Console.WriteLine(agenda);
+            LimpiarTextoPantalla();
+            Console.WriteLine(_AGENDA);
             Continuar();
         }
         public void MenuOrdenarContactos(string modo)
         {
-            agenda.OrdenarContactos(modo);
+            _AGENDA.OrdenarContactos(modo);
             MenuVerContactos();
         }
 
@@ -60,22 +60,59 @@ namespace Proyetco_final_Agenda_de_contactos.Clases
             string cor = "";
             bool result = false;
 
-            Console.Clear();
+            LimpiarTextoPantalla();
 
             Console.WriteLine("-- Agregar Nuevo Contacto --\n");
             Console.WriteLine("-- Nombre: String, Telefono: Int y Correo: String -- \n");
 
-            Console.WriteLine("Ingrese el Nombre: ");
-            nom = Console.ReadLine();
+            try
+            {
+                Console.WriteLine("Ingrese el Nombre: ");
+                nom = Console.ReadLine();
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Debe Ingresar un Nombre valido!");
+                result = false;
+            }
 
-            Console.WriteLine("Ingrese el Telefono: ");
-            tel = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Ingrese el Correo: ");
-            cor = Console.ReadLine();
+            try
+            {
+                Console.WriteLine("Ingrese el Telefono: ");
+                tel = int.Parse(Console.ReadLine());
+            }
+            catch (Exception)
+            {
 
-            result = agenda.AgregarContacto(nom, tel, cor);
+                Console.WriteLine("Debe Ingresar Numero de telefono valido!");
+                result = false;
+            }
 
+
+            try
+            {
+                Console.WriteLine("Ingrese el Correo: ");
+                cor = Console.ReadLine();
+            }
+            catch (Exception)
+            {
+
+                Console.WriteLine("Debe Ingresar Correo valido!");
+                result = false;
+            }
+
+
+            if (!String.IsNullOrWhiteSpace(nom) && !String.IsNullOrWhiteSpace(cor)) // valida que los string leidos no sean: vacio, nulo o solo contengan espacios
+            {
+                result = _AGENDA.AgregarContacto(nom, tel, cor);
+            }
+            else
+            {
+                Console.WriteLine("Algunos datos no son validos. Vuelva a intentarlo!\n");
+            }
+
+           
             MensajeError(result);
 
         }
@@ -86,7 +123,7 @@ namespace Proyetco_final_Agenda_de_contactos.Clases
             bool result = false;
             string opc = "";
 
-            Console.Clear();
+            LimpiarTextoPantalla();
 
             Console.WriteLine("-- Se eliminara el ultimo contacto -- \n");
             Console.WriteLine("¿Esta seguro?: Y / N");
@@ -94,14 +131,13 @@ namespace Proyetco_final_Agenda_de_contactos.Clases
 
             if (opc == "Y" || opc == "y")
             {
-                Console.Clear();
-                contElim = agenda.BorrarUltimo();
+                LimpiarTextoPantalla();
+                contElim = _AGENDA.BorrarUltimoContacto();
                 
             }
 
             if (contElim != null)
             {
-                Console.WriteLine("Fue eliminado el contacto: \n {0}", contElim);  
                 result = true;
             }
 
@@ -114,13 +150,13 @@ namespace Proyetco_final_Agenda_de_contactos.Clases
             string nombre = "";
             List<Contacto> resultadoL = new List<Contacto>();
             
-            Console.Clear();
+            LimpiarTextoPantalla();
 
             Console.WriteLine("-- Busqueda Contacto por Nombre -- \n");
             Console.WriteLine("Ingrese el Nombre para realizar la busqueda: ");
             nombre = Console.ReadLine();
 
-            resultadoL = agenda.BuscarPorNombre(nombre);
+            resultadoL = _AGENDA.BuscarContactoPorNombre(nombre);
 
             if (resultadoL.Count > 0)
             {
@@ -166,19 +202,20 @@ namespace Proyetco_final_Agenda_de_contactos.Clases
         private void PoblarAgenda()
         {
             // datos de prueba
-            agenda.AgregarContacto("Alberto Nuñes", 1234567, "nombre1@mm.com");
-            agenda.AgregarContacto("Zulon Tercero", 7894561, "nombre2@mm.com");
-            agenda.AgregarContacto("Abel Ariz", 7418529, "nombre3@mm.com");
-            agenda.AgregarContacto("Beto Ortiz", 9632587, "nombre4@mm.com");
-            agenda.AgregarContacto("Beto Flauta", 9632587, "nombre4@mm.com");
-            agenda.AgregarContacto("Diego Beto", 9632587, "nombre4@mm.com");
+            _AGENDA.AgregarContacto("Alberto Nuñes", 1234567, "nombre1@mm.com");
+            _AGENDA.AgregarContacto("Zulon Tercero", 7894561, "nombre2@mm.com");
+            _AGENDA.AgregarContacto("Abel Ariz", 7418529, "nombre3@mm.com");
+            _AGENDA.AgregarContacto("Beto Ortiz", 9632587, "nombre4@mm.com");
+            _AGENDA.AgregarContacto("Beto Flauta", 9632587, "nombre4@mm.com");
+            _AGENDA.AgregarContacto("Diego Beto", 9632587, "nombre4@mm.com");
+            LimpiarTextoPantalla();
         }
 
         public void Continuar()
         {
             Console.WriteLine("<<< Presione una tecla para continuar...");
             Console.ReadKey();
-            Console.Clear();
+            LimpiarTextoPantalla();
         }
 
         private void MensajeError(bool result)
@@ -217,7 +254,7 @@ namespace Proyetco_final_Agenda_de_contactos.Clases
                 "\n\n" +
                 "Bogota, D.C / Colombia 2023\n\n";
 
-            Console.Clear();
+            LimpiarTextoPantalla();
             Console.WriteLine("-- Acerca de --\n");
 
             EscribirLento(mensaje);
@@ -232,11 +269,11 @@ namespace Proyetco_final_Agenda_de_contactos.Clases
             
             if (reproducir)
             {
-                wply.controls.play();
+                _WPLY.controls.play();
             }
             else
             {
-                wply.controls.stop();
+                _WPLY.controls.stop();
             }
 
 
@@ -250,6 +287,11 @@ namespace Proyetco_final_Agenda_de_contactos.Clases
                 Console.Write(item);
                 Thread.Sleep(velocidad);
             }
+        }
+
+        private void LimpiarTextoPantalla()
+        {
+            Console.Clear();
         }
 
 

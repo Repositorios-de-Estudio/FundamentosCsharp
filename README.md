@@ -3,6 +3,8 @@
 Curso: https://www.udemy.com/course/c-sharp-para-principiantes/
 Documentacion C#: https://learn.microsoft.com/es-es/dotnet/
 
+### Curso Completado :)
+
 # MIS NOTAS
 
 ## Areas de aplicacion de C#
@@ -228,7 +230,7 @@ Documentacion C#: https://learn.microsoft.com/es-es/dotnet/
 - Decremento: `var--;`
 
 ## Operadores Ternario
-- ejemplo (if): `variable = value < 0 ? 0: value;`
+- ejemplo (if): `variable = value < 0 ? 0: value;` // condicional if
 	- si valor es menor a 0, retorna 0, sino retorna valor, value palabra reservada
 
 
@@ -473,6 +475,8 @@ foreach (var item in arreglo)
 - `internal`: todos dentro del mismo ensamblado pueden acceder
 - `protected`:todas las subclases pueden acceder
 - `private`: solo la clase puede acceder
+	- variable privada `private int _VAR;` // en mayusculas y guion bajo al inicio del nombre
+	- variable constatnte `private const int _VAR;`
 
 ## FORMATO TEXTO
 - Crear cadena: `string result = string.Format("Aca texto {0}. ", var);`
