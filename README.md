@@ -3,7 +3,7 @@
 Curso: https://www.udemy.com/course/c-sharp-para-principiantes/
 Documentacion C#: https://learn.microsoft.com/es-es/dotnet/
 
-### Curso Completado :)
+#### Curso Completado, al final se encuentra la especificación del proyecto final
 
 # MIS NOTAS
 
