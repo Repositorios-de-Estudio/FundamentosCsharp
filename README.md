@@ -86,7 +86,7 @@ Documentacion C#: https://learn.microsoft.com/es-es/dotnet/
 	- La clase que hereda implementa todas los metodos y propiedades abstractos
 	- Se vuelva así misma una clase abstracta
 - Se pueden definir metodos y propiedades abstractos y no abstractos
-- Las clases abstractas pueden heredas de otra clase abstracta
+- Las clases abstractas pueden heredar de otra clase abstracta
 - No son instanciables (no se pueden crear objetos)
 - Declara metodos que se deben sobreescribir en la clase que herede de esta
 	- Se pueden crear metodos no abstractos
@@ -150,7 +150,7 @@ Documentacion C#: https://learn.microsoft.com/es-es/dotnet/
 
 # Poliformismo
 - Habilidad de poder realizar operaciones con objetos de distinto tipo
-	- ej: objetos distinto tipo TV, auto, Lampar se pueden "Encender"
+	- ej: objetos distinto tipo TV, auto, Lampara se pueden "Encender"
 - Permite crear sistemas escalables
 - Objetos de distinto tipo se comportan como uno solo
 - Reuso de codigo
