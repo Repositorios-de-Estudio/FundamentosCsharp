@@ -25,5 +25,18 @@ namespace Clases_Abstractas
             Console.WriteLine("Trabajando X Honorarios :D...");
         }
 
+        // al existir (new) ya el metodo se debe sobreescribir aca
+        public new void Saludar()
+        {
+            base.Saludar();
+            Console.WriteLine("Hola!! saluda {0}", Nombre);
+        }
+
+        public override void Desayunar()
+        {
+            //base.Desayunar();
+            Console.WriteLine("Tomando cafe!!");
+        }
+
     }
 }

@@ -15,11 +15,14 @@ namespace Clases_Abstractas
             Console.WriteLine();
 
             eH1.Trabajar();
+            eH1.Saludar();
             Console.WriteLine("Salario de {0} por honborarios: {1}",eH1.Nombre, eH1.Salario);
 
             Console.WriteLine();
 
             eN1.Trabajar();
+            eN1.Saludar();
+            eN1.Desayunar();
             Console.WriteLine("Salario de {0} por nomina: {1}", eN1.Nombre, eN1.Salario);
 
             Console.WriteLine();
