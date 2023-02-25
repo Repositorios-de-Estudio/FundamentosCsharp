@@ -16,6 +16,7 @@ namespace Clases_Abstractas
 
             eH1.Trabajar();
             eH1.Saludar();
+            eH1.Desayunar();
             Console.WriteLine("Salario de {0} por honborarios: {1}",eH1.Nombre, eH1.Salario);
 
             Console.WriteLine();

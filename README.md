@@ -91,8 +91,8 @@ Documentacion C#: https://learn.microsoft.com/es-es/dotnet/
 	- Se pueden crear metodos no abstractos
 - Cuando se tienen varias clases que comparten metodos y propiedades que funcionan diferente
 - Se declara `abstracra class` en vez de `class`
-- Se usa `virtual` en un metodo de una superclase para indicar en C# que NO debe sobreescribir el metodo en una subclase: `public virtual void Metodo() {}`
-- Se usa `virtual` en una propiedad de una superclase para indicar en C# que NO se debe sobreescribir la propiedad en una subclase: `public virtual int Prop {get; set;}`
+- Se usa `virtual` en un metodo de una superclase para indicar en C# que se puede sobreescribir el metodo en una subclase: `public virtual void Metodo() {}`
+- Se usa `virtual` en una propiedad de una superclase para indicar en C# que se puede sobreescribir la propiedad en una subclase: `public virtual int Prop {get; set;}`
 - Se usa `abstract` en un metodo de una superclase para indicar en C# que SE DEBE sobreescribir el metodo en una subclase: `public abstract void Metodo() {}`
 - Se usa `public abstract int Propiedad {get; set};` para denotar que solo se hace la estructura de la propiedad y es inicializa por la clase que herede de esta
 	- Por ejemplo si se quiere calcular salario pero cada _subclase_ que lo implementa aplica una formula matematica diferente, uno de `salario*1.1` y otro de `salario*1.5`

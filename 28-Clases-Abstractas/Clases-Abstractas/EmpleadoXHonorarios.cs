@@ -7,13 +7,14 @@ using System.Text;
 namespace Clases_Abstractas
 {
     internal class EmpleadoXHonorarios : Empleado
-    {
+    { 
         public decimal SueldoBase { get; set; }
         
         // implementacion de propiedad abstract de la clase base
         public override decimal Salario { get => SueldoBase*0.84m; }
 
-        // la propiedad virtual no se debe implementar
+        // la propiedad virtual se puede sobreescribir
+        public override string ARL { get => "Sin seguridad"; }
 
         public EmpleadoXHonorarios(string nombre, string puesto, decimal sueldoBase, string arl) : base(nombre, puesto, arl)
         {
@@ -35,8 +36,10 @@ namespace Clases_Abstractas
         }
 
         // al ser virual en la clase base este metodo nunca se ejecuta, siempre va a imprimir "Empleado - Esta desayunando..."
+        // con sealed override se reescribe el metodo
         public override void Desayunar()
         {
+            base.Desayunar();
             Console.WriteLine("Tomando cafe!!");
         }
 
