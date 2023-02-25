@@ -156,7 +156,7 @@ Documentacion C#: https://learn.microsoft.com/es-es/dotnet/
 - Permite crear sistemas escalables
 - Objetos de distinto tipo se comportan como uno solo
 - Reuso de codigo
-- Se aplica con Interfaces y Herencia
+- Se aplica con clases, metodos virtual que se reescriben con overrride, new y sealed override
 
 ## Interfaces
 - Define metodos y propiedades abstractos
@@ -175,8 +175,6 @@ Documentacion C#: https://learn.microsoft.com/es-es/dotnet/
 - Se declara con `interface`
 - Implicitamente todos las propiedades y metodos son `interface` para no tener que escribirlo
 - Implicitamente todos las propiedades y metodos son `public` para no tener que escribirlo
-
-
 
 # Versiones:
 - version  1.0: 2002
@@ -585,12 +583,16 @@ public static : No necesita tener un objeto instanciado para ser usado, los meto
 	
 - Interfaz vs Clase abstracta/concreta
 
-| **Propiedad**		 										   | Interfaz | Clase    |
-|--------------------------------------------------------------|----------|----------|
-| todos los metodos y propiedad se tiene que implementar  	   | Si		  | Opcional |
-| 2  	                                                       | Cell 5   | Cell 6   |
-| 3  	                                                       | Cell 8   | Cell 9   |
 
+| Propiedad                                                    | Interfaz (I)                                                                | Clase<br>Abstract /<br>Concreta                                                                                                    |
+|--------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| Herencia                                                     | Si, multiple                                                                | Si, solo simple                                                                                                                    |
+| Metodos y Clases                                             | Siempre Abstractos (implementación muy rigida)                              | Concretros o Abstractos (implementacion mas flexible)                                                                              |
+| Uso                                                          | Cuando la subclase debe implementa todos y se requiere de Herencia multiple | Cuando la subclase solo implementa algunos atributos y metodos, y la subclase implemnta otros, y no es necesario herencia multiple |
+| Uso de virtual y abstract (overrride, new)                   | NO                                                                          | SI                                                                                                                                 |
+| Polimorfismo (objetos de distinto tipo con metodos en comun) | NO                                                                          | SI, se puede usar virtual con new, override y sealed overrride                                                                     |
+	                                                       | Cell 8   | Cell 9   |
+***
 
 ## Visual estudio
 - Propiedades aparecen con icono de llave inglesa.
@@ -619,7 +621,7 @@ public static : No necesita tener un objeto instanciado para ser usado, los meto
 - Reemplazar: `Ctrl + H`
 - Documentación: `F1`
 
-
+***
 
 # PROYECTO FINAL
 
@@ -660,3 +662,4 @@ Contactos:
  - Uso de animacion de texto para los creditos en `Acerca de...`
  - Proyecto disponible en: ".../40-Proyetco_final-Agenda_de_contactos"
  
+***
