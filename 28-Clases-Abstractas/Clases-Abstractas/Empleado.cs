@@ -9,10 +9,9 @@ namespace Clases_Abstractas
     {
         public string Nombre { get; set; }
         public string Puesto { get; set;}
-        public string ARL { get; set; }
+        public virtual string ARL { get; set; }
 
-        // Propiedad abstracta que debe de ser definida por la subclase
-        // esta no va en el constructor
+        // Propiedad abstracta que debe de ser definida por la subclase, esta no va en el constructor
         public abstract decimal Salario { get; }
 
         public Empleado(string nombre, string puesto, string arl)

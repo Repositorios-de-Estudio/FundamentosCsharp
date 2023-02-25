@@ -9,8 +9,8 @@ namespace Clases_Abstractas
     {
         static void Main(string[] args)
         {
-            EmpleadoXHonorarios eH1 = new EmpleadoXHonorarios("Jhon", "Computacion", 4000);
-            EmpleadoXNomina eN1 = new EmpleadoXNomina("Albon", "Administracion", 4000);
+            EmpleadoXHonorarios eH1 = new EmpleadoXHonorarios("Jhon", "Computacion", 4000, "SuperSalud");
+            EmpleadoXNomina eN1 = new EmpleadoXNomina("Albon", "Administracion", 4000, "AlohaSalud");
 
             Console.WriteLine();
 

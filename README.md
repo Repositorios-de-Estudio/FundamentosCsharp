@@ -40,7 +40,6 @@ Documentacion C#: https://learn.microsoft.com/es-es/dotnet/
 	- De esta manera se puede tener un arbol de herencia: Animal <- Mamifero <- Felino <- Leon
 - C# solo soporta herencia simple, cada clase solo puede heredas de una sola clase
 	- 	La herencia multiple se tratar con Interfaces
-- Se usa `virtual` en una superclase para indicar en C# que se puede sobreescribir el metodo en una subclase: `public virtual Metodo() {}`
 - Se usa `override` en una sublcase para indicar en C# que se va a sobreescribir un metodo de la subclase: `public override string ToString() { return "";}` 
 	- Al usar `override` en un Metodo se puede agregar lo que hace la _superclase_ con `base.Metodo();`
 - Se llama al constructor de la _superclase_ con : `base(param1, param2)`
@@ -92,6 +91,9 @@ Documentacion C#: https://learn.microsoft.com/es-es/dotnet/
 	- Se pueden crear metodos no abstractos
 - Cuando se tienen varias clases que comparten metodos y propiedades que funcionan diferente
 - Se declara `abstracra class` en vez de `class`
+- Se usa `virtual` en un metodo de una superclase para indicar en C# que NO debe sobreescribir el metodo en una subclase: `public virtual void Metodo() {}`
+- Se usa `virtual` en una propiedad de una superclase para indicar en C# que NO se debe sobreescribir la propiedad en una subclase: `public virtual int Prop {get; set;}`
+- Se usa `abstract` en un metodo de una superclase para indicar en C# que SE DEBE sobreescribir el metodo en una subclase: `public abstract void Metodo() {}`
 - Se usa `public abstract int Propiedad {get; set};` para denotar que solo se hace la estructura de la propiedad y es inicializa por la clase que herede de esta
 	- Por ejemplo si se quiere calcular salario pero cada _subclase_ que lo implementa aplica una formula matematica diferente, uno de `salario*1.1` y otro de `salario*1.5`
 	- Esto facilita que al pedir salario retorne el salario para cada caso y no tener que calcularlo en un metodo diferente
@@ -174,7 +176,7 @@ Documentacion C#: https://learn.microsoft.com/es-es/dotnet/
 
 
 # Versiones:
-- version 1.0: 2002
+- version  1.0: 2002
 - version 11.0: 2022
 
 # Ventajas de usar POO
@@ -577,6 +579,15 @@ public static : No necesita tener un objeto instanciado para ser usado, los meto
 	- `Console.WriteLine("Palabra con \"de\".");` resultado: `Palabra con "de".`
 - Las operaciones con cadenas pueden afectar el rendimiento por lo que se deberia usar String Builder
 	- Se evita llenar la memoria de objetos innecesarios al modificar un solo objeto
+	
+- Interfaz vs Clase abstracta/concreta
+
+| **Propiedad**		 										   | Interfaz | Clase    |
+|--------------------------------------------------------------|----------|----------|
+| todos los metodos y propiedad se tiene que implementar  	   | Si		  | Opcional |
+| 2  	                                                       | Cell 5   | Cell 6   |
+| 3  	                                                       | Cell 8   | Cell 9   |
+
 
 ## Visual estudio
 - Propiedades aparecen con icono de llave inglesa.

@@ -12,7 +12,7 @@ namespace Clases_Abstractas
         // implementacion de propiedad abstract de la clase asbtracta
         public override decimal Salario { get => SueldoBase * 1.1m; }
 
-        public EmpleadoXNomina (string nombre, string puesto, decimal sueldoBase) : base(nombre, puesto)
+        public EmpleadoXNomina (string nombre, string puesto, decimal sueldoBase, string arl) : base(nombre, puesto, arl)
         {
             SueldoBase = sueldoBase;
         }
