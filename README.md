@@ -591,7 +591,7 @@ public static : No necesita tener un objeto instanciado para ser usado, los meto
 | Uso                                                          | Cuando la subclase debe implementa todos y se requiere de Herencia multiple | Cuando la subclase solo implementa algunos atributos y metodos, y la subclase implemnta otros, y no es necesario herencia multiple |
 | Uso de virtual y abstract (overrride, new)                   | NO                                                                          | SI                                                                                                                                 |
 | Polimorfismo (objetos de distinto tipo con metodos en comun) | NO                                                                          | SI, se puede usar virtual con new, override y sealed overrride                                                                     |
-	                                                       | Cell 8   | Cell 9   |
+
 ***
 
 ## Visual estudio
