@@ -10,6 +10,9 @@ namespace Polimorfismo
         public double Base { get; set; }
 
         public double Altura { get; set; }
+
+        public int Id { get; set; }
+
         public double CalcularArea()
         {
             return Base * Altura / 2;

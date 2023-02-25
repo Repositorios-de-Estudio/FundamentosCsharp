@@ -7,7 +7,11 @@ namespace Polimorfismo
 {
     internal class Circulo : IFigura
     {
+        
         public double Radio { get; set; }
+
+        public int Id { get; set; }
+
         public double CalcularArea()
         {
             return Math.PI * Math.Pow(Radio, 2);

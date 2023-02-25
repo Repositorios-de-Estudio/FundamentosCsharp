@@ -160,8 +160,11 @@ Documentacion C#: https://learn.microsoft.com/es-es/dotnet/
 
 ## Interfaces
 - Define metodos y propiedades abstractos
+- todos los metodos y propiedades son abstractos por defecto
 - Todos los metodos y propiedades deben ser abstractos
-- Todos los metodos y propiedades deben ser implementados por la clase que hereda
+- Todos los metodos y propiedades deben ser implementados por _subclase_
+- No se puede usar `virtual`
+- No se debe usar `override` ni `new` en la _subclase_
 - Una interfaz es como un molde rigido para una clase
 - Una clase puede implementar varias interfaces
 - Las interfaces deben empezar con I mayuscula: Interfaz Encendible = IEncencible
